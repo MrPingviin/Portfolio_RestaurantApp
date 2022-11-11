@@ -1,0 +1,126 @@
+.highlighted {
+  color: #FF9A1E;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.75rem;
+  gap: 0.5rem;
+  box-shadow: 0px 0px 0.5rem rgba(20, 20, 20, 0.35);
+}
+
+.menu-card img {
+  max-width: 12.5rem;
+  max-height: auto;
+  aspect-ratio: auto;
+}
+
+.menu-card-upper-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: 100%;
+}
+
+.menu-card-bottom-row {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.menu-card-bottom-row-upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: 100%;
+  font-size: 1rem;
+}
+
+.menu-card-bottom-row-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: 100%;
+}
+
+.menu-card button {
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  background-color: #FF9A1E;
+  font-size: 1.35rem;
+}
+
+#bestSellers {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 100vw;
+  font-size: 2rem;
+}
+
+#bestSellers-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Nunito-Bold;
+  gap: 3rem;
+  width: 90%;
+  height: 100%;
+}
+
+#bestSellers-content-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+#bestSellers-content-titles h3 {
+  font-family: Nunito-Regular;
+}
+#bestSellers-content-titles img {
+  position: absolute;
+  max-width: 15%;
+  transform: rotateZ(-20deg);
+  right: 5vw;
+  z-index: 0;
+}
+
+#bestSellers-content-menu-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 100%;
+}
+
+#bestSellers-content-menu-navbar {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  font-size: 2.5rem;
+  gap: 0.5rem;
+}
+
+.menu-nav-button:hover {
+  cursor: pointer;
+  filter: brightness(85%);
+}
+
+#bestSellers-content-menu-content {
+  display: flex;
+  justify-content: center;
+  grid-gap: 1rem;
+  max-width: 100%;
+  max-height: 100%;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=BestSellers.css.map */

@@ -1,0 +1,180 @@
+.highlighted {
+  color: #FF9A1E;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-height: 7.5rem;
+  padding: 1rem 0rem;
+  font-family: Nunito-Bold;
+  z-index: 999;
+  font-size: 1.5rem;
+}
+
+#nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  z-index: 999;
+}
+
+#nav-logo {
+  font-family: Nunito-ExtraBold;
+  font-size: 2.25rem;
+}
+
+#nav-optionSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+#nav-options ul {
+  display: flex;
+  gap: 3rem;
+}
+
+#nav-options ul a:nth-child(2) {
+  border-bottom: 0.35rem #F5F5F5 solid;
+}
+
+#nav-options ul a:hover {
+  border-bottom: 0.35rem #FF9A1E solid;
+}
+
+#nav-signup button {
+  font-family: Nunito-Bold;
+  padding: 0.75rem 2rem;
+  background-color: #FF9A1E;
+  color: #FFFFFF;
+  border-radius: 1.25rem;
+  font-size: 0.65em;
+}
+
+#welcomePage-content {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  justify-items: center;
+  font-size: 1.3rem;
+}
+
+#welcomePage-middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-content: center;
+  grid-gap: 1rem;
+  margin-top: 5vh;
+}
+
+#welcomePage-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 80%;
+  gap: 1.25rem;
+}
+
+#welcomePage-message-title {
+  font-family: Nunito-ExtraBold;
+  font-size: 2rem;
+}
+
+#welcomePage-message-text {
+  font-size: 1.25rem;
+}
+
+#welcomePage-message-button {
+  display: flex;
+  gap: 1rem;
+}
+
+#welcomePage-message-button button {
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  font-family: Nunito-Bold;
+  font-size: 1.25rem;
+}
+
+#welcomePage-message-button button:nth-child(1) {
+  background-color: #FF9A1E;
+}
+
+#welcomePage-message-button button:nth-child(2) {
+  background: none;
+  border: 0.125rem #FF9A1E solid;
+}
+
+#welcomePage-image img:first-child {
+  max-width: 20vw;
+}
+
+#welcomePage-bottom {
+  display: flex;
+  position: relative;
+  width: 85vw;
+  max-height: 15vh;
+  justify-content: flex-end;
+}
+
+#welcomePage-bottom-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.welcomePage-bottom-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 1rem rgba(20, 20, 20, 0.35);
+  gap: 0.15rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.welcomePage-bottom-card:hover {
+  cursor: pointer;
+  background-color: #FEB45A;
+}
+
+.welcomePage-bottom-card span:last-child {
+  font-family: Nunito-Bold;
+}
+
+.welcomePage-side-icon-hotdog {
+  max-width: 10rem;
+  max-height: auto;
+  position: absolute;
+  z-index: -1;
+  left: -5vh;
+  bottom: 0vh;
+}
+
+.welcomePage-side-icon-hamburger {
+  max-width: 10rem;
+  max-height: auto;
+  position: absolute;
+  z-index: -1;
+  right: 17.5vh;
+  bottom: 25vh;
+  transform: rotateZ(30deg);
+}
+
+.welcomePage-side-icon-steak {
+  max-width: 10rem;
+  max-height: auto;
+  position: absolute;
+  z-index: -1;
+  right: 75vh;
+  bottom: 70vh;
+  transform: rotateZ(-30deg);
+}/*# sourceMappingURL=WelcomePage.css.map */

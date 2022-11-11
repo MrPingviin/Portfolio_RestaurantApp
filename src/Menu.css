@@ -1,0 +1,76 @@
+.highlighted {
+  color: #FF9A1E;
+}
+
+#menu {
+  display: flex;
+  justify-content: center;
+}
+
+#menu-content {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Nunito-Bold;
+  gap: 1.5rem;
+  width: 90%;
+  height: 100%;
+  font-size: 2rem;
+}
+#menu-content #tomato {
+  position: absolute;
+  max-width: 15vw;
+  left: 0;
+  top: 7.5vh;
+  transform: rotateZ(-10deg);
+  z-index: 0;
+}
+
+#menu-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0rem;
+  z-index: 1;
+}
+#menu-titles h3 {
+  font-family: Nunito-Regular;
+  color: #FF9A1E;
+}
+#menu-titles h2 {
+  font-family: Nunito-Bold;
+}
+
+#menu-categories {
+  font-size: 1.5rem;
+}
+#menu-categories ul {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0rem 0rem;
+  background-color: #FFFFFF;
+  border-radius: 2rem;
+  box-shadow: 0.1rem 0.2rem 0.1rem rgba(20, 20, 20, 0.35);
+  font-family: Nunito-SemiBold;
+}
+#menu-categories ul li {
+  padding: 0.5rem 0.75rem;
+  border-radius: 2rem;
+}
+#menu-categories ul li:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+#menu-categories ul li:nth-child(1) {
+  background-color: #FF9A1E;
+}
+
+#menu-dishes {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  max-width: 90%;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=Menu.css.map */

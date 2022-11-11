@@ -1,0 +1,74 @@
+.highlighted {
+  color: #FF9A1E;
+}
+
+#booking {
+  display: flex;
+  align-items: center;
+}
+
+#booking-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #FF9A1E;
+  align-content: center;
+  justify-items: center;
+  font-size: 2rem;
+  max-width: 100%;
+}
+
+#booking-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 80%;
+  gap: 3rem;
+}
+
+#booking-header {
+  position: relative;
+  font-size: 1.5rem;
+  font-family: Nunito-Bold;
+}
+#booking-header img {
+  position: absolute;
+  max-width: 10%;
+  transform: rotateZ(25deg);
+  top: -5vh;
+  left: -12.5vh;
+  z-index: 0;
+}
+
+#booking-middle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  max-width: 80%;
+}
+#booking-middle h2 {
+  color: #FFFFFF;
+  font-family: Nunito-Bold;
+}
+#booking-middle p {
+  color: #FFFFFF;
+  font-size: 1.25rem;
+}
+
+#booking-bottom button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  background-color: #2D2D2D;
+  color: #FFFFFF;
+  font-family: Nunito-Bold;
+  font-size: 2rem;
+}
+
+#booking-image {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+#booking-image img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=Booking.css.map */

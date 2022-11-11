@@ -1,0 +1,182 @@
+@use "./Variables.scss" as *;
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-height: 7.5rem;
+    padding: 1rem 0rem;
+    font-family: Nunito-Bold;
+    z-index: 999;
+    font-size: 1.5rem;
+}
+
+#nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    z-index: 999;
+
+}
+
+#nav-logo {
+    font-family: Nunito-ExtraBold;
+    font-size: 2.25rem;
+}
+
+#nav-optionSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+#nav-options ul{
+    display: flex;
+    gap: 3rem;
+}
+
+
+#nav-options ul a:nth-child(2) {
+    border-bottom: 0.35rem $Background solid;
+}
+
+// ! Sample
+#nav-options ul a:hover{
+    border-bottom: 0.35rem $Orange solid;
+}
+
+#nav-signup button {
+    font-family: Nunito-Bold;
+    padding: 0.75rem 2rem;
+    background-color: $Orange;
+    color: $White;
+    border-radius: 1.25rem;
+    font-size: 0.65em;
+}
+
+#welcomePage-content {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    justify-items: center;
+    font-size: 1.3rem;
+}
+
+#welcomePage-middle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    grid-gap: 1rem;
+    margin-top: 5vh;
+}
+
+#welcomePage-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80%;
+    gap: 1.25rem;
+    
+}
+
+#welcomePage-message-title {
+    font-family: Nunito-ExtraBold;
+    font-size: 2rem;
+}
+
+#welcomePage-message-text {
+    font-size: 1.25rem;
+}
+
+#welcomePage-message-button {
+    display: flex;
+    gap: 1rem;
+}
+
+#welcomePage-message-button button {
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    font-family: Nunito-Bold;
+    font-size: 1.25rem;
+
+}
+
+#welcomePage-message-button button:nth-child(1) {
+    background-color: $Orange;
+}
+
+#welcomePage-message-button button:nth-child(2) {
+   background: none;
+   border: 0.125rem $Orange solid;
+}
+
+#welcomePage-image img:first-child {
+    max-width: 20vw;
+}
+
+#welcomePage-bottom {
+    display: flex;
+    position: relative;
+    width: 85vw;
+    max-height: 15vh;
+    justify-content: flex-end;
+}
+
+#welcomePage-bottom-content {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+ grid-gap: 2rem;
+}
+
+.welcomePage-bottom-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $White;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 1rem $Shadow;
+    gap: 0.15rem;
+    padding: 1rem;
+    font-size: 1.10rem;
+
+}
+
+.welcomePage-bottom-card:hover {
+    cursor: pointer;
+    background-color: $LightOrange;
+}
+
+.welcomePage-bottom-card span:last-child {
+    font-family: Nunito-Bold;
+}
+
+@mixin welcomePage-side-icon {
+max-width: 10rem;
+max-height: auto;
+position: absolute;
+z-index: -1;
+}
+
+.welcomePage-side-icon-hotdog {
+    @include welcomePage-side-icon();
+    left: -5vh;
+    bottom: 0vh;
+}
+
+.welcomePage-side-icon-hamburger {
+    @include welcomePage-side-icon();
+    right: 17.5vh;
+    bottom: 25vh;
+    transform: rotateZ(30deg);
+}
+
+.welcomePage-side-icon-steak {
+    @include welcomePage-side-icon();
+    right: 75vh;
+    bottom: 70vh;
+    transform: rotateZ(-30deg);
+}
