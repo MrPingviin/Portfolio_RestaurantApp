@@ -8,6 +8,7 @@ import OurServices from './OurServices';
 import Testimonials from './Testimonials';
 import Newsletter from './Newsletter';
 import Faq from './Faq';
+import Footer from './Footer';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -20,5 +21,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Testimonials />
     <Newsletter />
     <Faq />
+    <Footer />
   </React.StrictMode>
 )

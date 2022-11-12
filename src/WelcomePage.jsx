@@ -26,6 +26,7 @@ function WelcomePage() {
                 <a href="#booking">Book Table</a>
                 <a href="#our-Services">About</a>
                 <a href="#testimonials">Reviews</a>
+                <a href="#faq">Faq</a>
               </ul>
             </div>
 

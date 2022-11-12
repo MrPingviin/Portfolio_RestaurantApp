@@ -7,7 +7,7 @@ function Faq() {
         <div id="faq" className="page">
             <div id="faq-content">
                 <div id="faq-content-titles">
-                    <h3 className="highlighted">FAQS</h3>
+                    <h3 className="highlighted">FAQ</h3>
                     <h2>Frequently Asked <span className="highlighted">Questions</span></h2>
                 </div>
 
