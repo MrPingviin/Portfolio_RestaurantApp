@@ -1,0 +1,74 @@
+.highlighted {
+  color: #FF9A1E;
+}
+
+#newsletter {
+  display: flex;
+  align-items: center;
+}
+
+#newsletter-content {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  font-size: 2.5rem;
+  padding: 7.5rem;
+}
+
+#newsletter-background {
+  display: flex;
+  position: absolute;
+  background: url("/img/newsletter.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  filter: blur(1px) brightness(40%);
+  z-index: -1;
+}
+
+#newsletter-content-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+#newsletter-content-title h2 {
+  font-family: Nunito-ExtraBold;
+  color: #FFFFFF;
+  text-shadow: 1rem rgba(20, 20, 20, 0.35);
+}
+#newsletter-content-title p {
+  color: #EAEAEA;
+  font-size: 1.35rem;
+  font-family: Nunito-SemiBold;
+}
+
+#newsletter-content-subscribe {
+  display: flex;
+  background-color: #FFFFFF;
+  padding: 0.25rem;
+  border-radius: 0.75rem;
+}
+#newsletter-content-subscribe input {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  min-width: 25vw;
+  border: none;
+}
+#newsletter-content-subscribe input:focus {
+  outline: none;
+}
+#newsletter-content-subscribe button {
+  font-size: 1.5rem;
+  padding: 1.25rem 2rem;
+  border-radius: 0.75rem;
+  background-color: #FF9A1E;
+  font-family: Nunito-Bold;
+}/*# sourceMappingURL=Newsletter.css.map */

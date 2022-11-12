@@ -6,6 +6,8 @@ import Menu from './Menu';
 import Booking from './Booking';
 import OurServices from './OurServices';
 import Testimonials from './Testimonials';
+import Newsletter from './Newsletter';
+import Faq from './Faq';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -16,5 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Booking />
     <OurServices />
     <Testimonials />
+    <Newsletter />
+    <Faq />
   </React.StrictMode>
 )

@@ -21,10 +21,11 @@ function WelcomePage() {
               <ul>
                 <a href="#">DEBUG</a>
                 <a href="#">Home</a>
-                <a href="#best-Sellers">Our Menu</a>
-                <a href="#">About Us</a>
+                <a href="#best-Sellers">Best sellers</a>
+                <a href="#menu">Menu</a>
                 <a href="#booking">Book Table</a>
-                <a href="#">Contact Us</a>
+                <a href="#our-Services">About</a>
+                <a href="#testimonials">Reviews</a>
               </ul>
             </div>
 
