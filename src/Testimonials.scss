@@ -1,1 +1,99 @@
 @use "./Variables.scss" as *;
+
+#testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#testimonials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+#testimonials-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    h2 {
+        font-family: Nunito-Bold
+    }
+}
+
+#testimonials-reviews-container {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+   
+}
+
+#testimonials-reviews-navsection {
+    display: flex;
+    width: 95%;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    font-size: 2.5rem;
+}
+
+#testimonials-reviews-content {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
+}
+
+.testimonials-review-card {
+    display: flex;
+    background-color: $White;
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    gap: 1.5rem;
+    box-shadow: 0px 0px 0.5rem $Shadow;
+    
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-1rem);
+    }
+}
+
+.testimonials-review-card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $Orange;
+    border-radius: 15rem;
+    max-height: 8rem;
+    width: 8rem;
+img {
+    display: flex;
+    border-radius: 15rem;
+    max-height: 7.5rem;
+    max-width: 7.5rem;
+    
+    
+}
+}
+
+.testimonials-review-card-description-header {
+    h2 {
+        font-family: Nunito-Bold;
+    }
+
+    ul {
+        display: flex;
+    }
+}
+
+.testimonials-review-card-description-main {
+    p {
+        font-size: 1rem;
+        max-width: 12.5vw;
+    }
+}

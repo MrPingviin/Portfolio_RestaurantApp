@@ -19,6 +19,7 @@ function WelcomePage() {
           <div id="nav-optionSection">
             <div id="nav-options">
               <ul>
+                <a href="#">DEBUG</a>
                 <a href="#">Home</a>
                 <a href="#best-Sellers">Our Menu</a>
                 <a href="#">About Us</a>
