@@ -52,6 +52,10 @@ button {
   display: none;
 }
 
+.hidden {
+  display: none;
+}
+
 .page {
   min-height: 90vh;
   min-width: 100vw;
@@ -96,15 +100,66 @@ body {
   .mobile {
     display: inline;
   }
+  #mobile-menu {
+    display: flex;
+    font-size: 3rem;
+  }
+  #mobile-menu-container {
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: #F5F5F5;
+    height: 100vh;
+    width: 100vw;
+    -webkit-animation: popup 0.15s linear forwards;
+            animation: popup 0.15s linear forwards;
+    border: 0.25rem solid #FF9A1E;
+  }
+  #mobile-menu-container #mobile-menu-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    height: 90%;
+    width: 90%;
+  }
+  #mobile-menu-container #mobile-menu-content #mobile-menu-close-icon {
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    font-size: 5rem;
+  }
+  #mobile-menu-container #mobile-menu-content h1 {
+    font-size: 3.5rem;
+    font-family: Nunito-ExtraBold;
+  }
+  #mobile-menu-container #mobile-menu-content hr {
+    width: 100%;
+  }
+  #mobile-menu-container #mobile-menu-content ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
+    gap: 1rem;
+  }
+  #mobile-menu-container #mobile-menu-content button {
+    padding: 1rem 1.5rem;
+    background-color: #FF9A1E;
+    font-size: 2.5rem;
+    font-family: Nunito-Bold;
+    border-radius: 3rem;
+  }
   #nav-options ul {
     display: none;
   }
   #nav-signup {
     display: none;
-  }
-  #mobile-menu {
-    display: flex;
-    font-size: 3rem;
   }
   #welcomePage-content {
     gap: 2rem;
@@ -243,6 +298,37 @@ body {
   .page {
     padding-top: 7.5rem;
   }
+  #mobile-menu-container {
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: #F5F5F5;
+    height: 100vh;
+    width: 100vw;
+    -webkit-animation: popup 0.15s linear forwards;
+            animation: popup 0.15s linear forwards;
+    border: 0.25rem solid #FF9A1E;
+  }
+  #mobile-menu-container #mobile-menu-content #mobile-menu-close-icon {
+    font-size: 3.5rem;
+    right: 5vw;
+  }
+  #mobile-menu-container #mobile-menu-content h1 {
+    font-size: 2.5rem;
+    font-family: Nunito-ExtraBold;
+  }
+  #mobile-menu-container #mobile-menu-content hr {
+    width: 100%;
+  }
+  #mobile-menu-container #mobile-menu-content ul {
+    font-size: 1.75rem;
+  }
+  #mobile-menu-container #mobile-menu-content button {
+    font-size: 1.5rem;
+  }
   #welcomePage-message-title {
     font-size: 1.5rem;
   }
@@ -293,6 +379,9 @@ body {
   }
   #our-Services-Titles p {
     font-size: 1.3rem;
+  }
+  .our-Services-Card {
+    min-width: 75vw;
   }
   #our-Services-Appholder-MobileApps {
     display: flex;
