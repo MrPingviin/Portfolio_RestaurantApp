@@ -227,6 +227,17 @@ body {
   #menu-content #tomato {
     top: 0vh;
   }
+  .menu-card button {
+    padding: 0.75rem 2rem;
+    border-radius: 3rem;
+    background-color: #FF9A1E;
+    font-size: 1.5rem;
+  }
+  .menu-card-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
   #booking-content {
     display: flex;
     flex-direction: column;
@@ -277,7 +288,7 @@ body {
     gap: 2rem;
   }
   #testimonials-reviews-container #testimonials-reviews-content .testimonials-review-card {
-    min-width: 60vw;
+    min-width: 65vw;
     min-height: 20vh;
   }
   #testimonials-reviews-container #testimonials-reviews-content .testimonials-review-card .testimonials-review-card-description .testimonials-review-card-description-main p {
@@ -370,6 +381,8 @@ body {
     width: 100%;
   }
   #menu-content #menu-categories {
+    display: flex;
+    justify-content: center;
     font-size: 1.15rem;
     width: 100%;
   }

@@ -274,6 +274,19 @@ button {
     }
 }
 
+.menu-card button {
+    padding: 0.75rem 2rem;
+    border-radius: 3rem;
+    background-color: $Orange;
+    font-size: 1.5rem;
+}
+
+.menu-card-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 #booking-content {
     display: flex;
     flex-direction: column;
@@ -335,7 +348,7 @@ button {
         }
 
         .testimonials-review-card {
-            min-width: 60vw;
+            min-width: 65vw;
             min-height: 20vh;
 
             .testimonials-review-card-description {
@@ -468,9 +481,12 @@ html, body {
 }
 
 #menu-content #menu-categories {
+    display: flex;
+    justify-content: center;
     font-size: 1.15rem;
     width: 100%;
 }
+
 
 #our-Services-Titles {
     text-align: center;

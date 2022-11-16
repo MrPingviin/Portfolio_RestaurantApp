@@ -90,3 +90,10 @@
     background-color: $Orange;
     font-size: 1.35rem;
 }
+
+.menu-card-buttons {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 85%;
+    grid-gap: 0.5rem;
+}

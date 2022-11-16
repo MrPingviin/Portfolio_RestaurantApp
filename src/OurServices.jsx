@@ -50,8 +50,8 @@ function OurServices() {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nulla.</p>
                         </div>
                         <div id="our-Services-Appholder-MobileApps">
-                            <img src="/img/appstore.webp" alt="Apple Appstore badge." />
-                            <img src="/img/playstore.webp" alt="Google Playstore badge." />
+                            <img src="/img/appstore.webp" alt="Apple Appstore badge." onClick={() => window.location.href = "https://www.apple.com/app-store/"} />
+                            <img src="/img/playstore.webp" alt="Google Playstore badge." onClick={() => window.location.href = "https://play.google.com/"}/>
                         </div>
                     </div>
                     <div id="our-Services-Appholder-Image">

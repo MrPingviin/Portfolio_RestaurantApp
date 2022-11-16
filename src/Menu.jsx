@@ -40,7 +40,10 @@ function Menu() {
                     </span>
                   </div>
                 </div>
+                <div className="menu-card-buttons">
                 <button>Add To Cart</button>
+                <button>Inspect</button>
+                </div>
               </div>
             </div>
           );
