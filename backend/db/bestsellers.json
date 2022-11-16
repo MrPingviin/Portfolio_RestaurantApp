@@ -1,0 +1,42 @@
+[
+    {
+        "img": "/img/dishes/salads/dish-salad.webp",
+        "alt": "A plate of green salad.",
+        "name": "Greek Salad",
+        "price": 12.00,
+        "reviews": 69,
+        "sold": 0,
+        "type": "Salad"
+    },
+
+    {
+        "img": "/img/dishes/salads/dish-salad-2.webp",
+        "alt": "A plate of green salad.",
+        "name": "Olive Salad",
+        "price": 15.50,
+        "reviews": 123,
+        "sold": 0,
+        "type": "Salad"
+    },
+
+    {
+        "img": "/img/dishes/salads/dish-salad-3.webp",
+        "alt": "A plate of green salad.",
+        "name": "Ceasar Salad",
+        "price": 9.40,
+        "reviews": 12,
+        "sold": 0,
+        "type": "Salad"
+    },
+
+    {
+        "img": "/img/dishes/salads/dish-salad-4.webp",
+        "alt": "A plate of green salad.",
+        "name": "Mixed Salad",
+        "price": 9.99,
+        "reviews": 566,
+        "sold": 0,
+        "type": "Salad"
+    }
+    
+]

@@ -7,7 +7,7 @@ import { BsFillTelephoneFill } from 'react-icons/bs'
 function WelcomePage() {
 
   return (
-   <div id="welcomePage" class="page">
+   <div id="welcomePage" className="page">
     <nav>
       <div id="navbar">
         <div id="nav-content">

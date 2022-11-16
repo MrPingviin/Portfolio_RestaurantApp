@@ -1,0 +1,41 @@
+[
+    {
+        "img": "/img/dishes/chickens/dish-chicken.webp",
+        "alt": "A chicken dish.",
+        "name": "BBQ chicken with grilled vegetables",
+        "price": 12.00,
+        "reviews": 69,
+        "sold": 0,
+        "type": "Chicken"
+    },
+
+    {
+        "img": "/img/dishes/chickens/dish-chicken-2.webp",
+        "alt": "A chicken dish.",
+        "name": "Hot chicken wings with beans and rice",
+        "price": 15.50,
+        "reviews": 123,
+        "sold": 0,
+        "type": "Salad"
+    },
+
+    {
+        "img": "/img/dishes/chickens/dish-chicken-3.webp",
+        "alt": "A chicken dish.",
+        "name": "Fried chicken with broccoli salad and soy sauce",
+        "price": 9.40,
+        "reviews": 12,
+        "sold": 0,
+        "type": "Salad"
+    },
+
+    {
+        "img": "/img/dishes/chickens/dish-chicken-4.webp",
+        "alt": "A chicken dish.",
+        "name": "Chicken with Caesar salad",
+        "price": 9.99,
+        "reviews": 566,
+        "sold": 0,
+        "type": "Salad"
+    }
+]

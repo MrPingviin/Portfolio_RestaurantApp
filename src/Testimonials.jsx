@@ -23,12 +23,12 @@ function Testimonials() {
                     <div id="testimonials-reviews-content">
 
                         <div className="testimonials-review-card">
-                            <div class="testimonials-review-card-image">
+                            <div className="testimonials-review-card-image">
                                 <div className="testimonials-review-card-profile-image">
                                     <img src="/img/avatar_2.webp" alt="Review author." />
                                 </div>
                             </div>
-                            <div class="testimonials-review-card-description">
+                            <div className="testimonials-review-card-description">
                                 
                                 <div className="testimonials-review-card-description-header">
                                     <h2>Robert Patricia</h2>
@@ -49,12 +49,12 @@ function Testimonials() {
                         </div>
 
                         <div className="testimonials-review-card">
-                            <div class="testimonials-review-card-image">
+                            <div className="testimonials-review-card-image">
                                 <div className="testimonials-review-card-profile-image">
                                     <img src="/img/avatar_3.webp" alt="Review author." />
                                 </div>
                             </div>
-                            <div class="testimonials-review-card-description">
+                            <div className="testimonials-review-card-description">
                                 
                                 <div className="testimonials-review-card-description-header">
                                     <h2>Mayya Rani</h2>
@@ -75,12 +75,12 @@ function Testimonials() {
                         </div>
 
                         <div className="testimonials-review-card">
-                            <div class="testimonials-review-card-image">
+                            <div className="testimonials-review-card-image">
                                 <div className="testimonials-review-card-profile-image">
                                     <img src="/img/avatar_2.webp" alt="Review author." />
                                 </div>
                             </div>
-                            <div class="testimonials-review-card-description">
+                            <div className="testimonials-review-card-description">
                                 
                                 <div className="testimonials-review-card-description-header">
                                     <h2>Alber Takker</h2>
@@ -101,12 +101,12 @@ function Testimonials() {
                         </div>
 
                         <div className="testimonials-review-card">
-                            <div class="testimonials-review-card-image">
+                            <div className="testimonials-review-card-image">
                                 <div className="testimonials-review-card-profile-image">
                                     <img src="/img/avatar_2.webp" alt="Review author." />
                                 </div>
                             </div>
-                            <div class="testimonials-review-card-description">
+                            <div className="testimonials-review-card-description">
                                 
                                 <div className="testimonials-review-card-description-header">
                                     <h2>Robert Patricia</h2>
@@ -127,12 +127,12 @@ function Testimonials() {
                         </div>
 
                         <div className="testimonials-review-card">
-                            <div class="testimonials-review-card-image">
+                            <div className="testimonials-review-card-image">
                                 <div className="testimonials-review-card-profile-image">
                                     <img src="/img/avatar_3.webp" alt="Review author." />
                                 </div>
                             </div>
-                            <div class="testimonials-review-card-description">
+                            <div className="testimonials-review-card-description">
                                 
                                 <div className="testimonials-review-card-description-header">
                                     <h2>Mayya Rani</h2>
@@ -153,12 +153,12 @@ function Testimonials() {
                         </div>
 
                         <div className="testimonials-review-card">
-                            <div class="testimonials-review-card-image">
+                            <div className="testimonials-review-card-image">
                                 <div className="testimonials-review-card-profile-image">
                                     <img src="/img/avatar_2.webp" alt="Review author." />
                                 </div>
                             </div>
-                            <div class="testimonials-review-card-description">
+                            <div className="testimonials-review-card-description">
                                 
                                 <div className="testimonials-review-card-description-header">
                                     <h2>Alber Takker</h2>

@@ -1,0 +1,49 @@
+[
+    {
+        "img": "/img/dishes/burgers/dish-burger.webp",
+        "alt": "A hamburger.",
+        "name": "Smokey Burger",
+        "price": 12.00,
+        "reviews": 69,
+        "sold": 0,
+        "type": "Burger"
+    },
+    {
+        "img": "/img/dishes/burgers/dish-burger.webp",
+        "alt": "A hamburger.",
+        "name": "Doe Burger",
+        "price": 9.99,
+        "reviews": 95,
+        "sold": 0,
+        "type": "Burger"
+    },
+    {
+        "img": "/img/dishes/burgers/dish-burger.webp",
+        "alt": "A hamburger.",
+        "name": "Ultra Burger",
+        "price": 15.99,
+        "reviews": 45,
+        "sold": 0,
+        "type": "Burger"
+    },
+
+    {
+        "img": "/img/dishes/burgers/dish-burger.webp",
+        "alt": "A hamburger.",
+        "name": "Killer Burger",
+        "price": 29.99,
+        "reviews": 87,
+        "sold": 0,
+        "type": "Burger"
+    },
+
+    {
+        "img": "/img/dishes/burgers/dish-burger.webp",
+        "alt": "A hamburger.",
+        "name": "John Burger",
+        "price": 8.99,
+        "reviews": 95,
+        "sold": 0,
+        "type": "Burger"
+    }
+]

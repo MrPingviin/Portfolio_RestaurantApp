@@ -1,18 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import WelcomePage from './WelcomePage';
-import BestSellers from './BestSellers';
-import Menu from './Menu';
-import Booking from './Booking';
-import OurServices from './OurServices';
-import Testimonials from './Testimonials';
-import Newsletter from './Newsletter';
-import Faq from './Faq';
-import Footer from './Footer';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import WelcomePage from "./WelcomePage";
+import BestSellers from "./BestSellers";
+import Menu from "./Menu";
+import Booking from "./Booking";
+import OurServices from "./OurServices";
+import Testimonials from "./Testimonials";
+import Newsletter from "./Newsletter";
+import Faq from "./Faq";
+import Footer from "./Footer";
+import "./index.css";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <div>
     <WelcomePage />
     <BestSellers />
     <Menu />
@@ -22,5 +22,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Newsletter />
     <Faq />
     <Footer />
-  </React.StrictMode>
-)
+  </div>
+);

@@ -1,0 +1,11 @@
+[
+    {
+        "img": "/img/drinks/teas/tea-black.webp",
+        "alt": "A cup of black tea.",
+        "name": "Black tea",
+        "price": 2.99,
+        "reviews": 79,
+        "sold": 0,
+        "type": "Tea"
+    }
+]

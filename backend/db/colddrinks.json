@@ -1,0 +1,20 @@
+[
+    {
+        "img": "/img/drinks/cold-drinks/drink-coke.webp",
+        "alt": "A can of coke.",
+        "name": "Coca Cola (330ml)",
+        "price": 3.99,
+        "reviews": 25,
+        "sold": 0,
+        "type": "ColdDrink"
+    },
+    {
+        "img": "/img/drinks/cold-drinks/drink-dietcoke.webp",
+        "alt": "A can of diet coke.",
+        "name": "Diet Cola (330ml)",
+        "price": 4.99,
+        "reviews": 43,
+        "sold": 0,
+        "type": "ColdDrink"
+    }
+]

@@ -15,7 +15,7 @@ function Faq() {
                     <details>
                         <summary>
                             <span>Lorem ipsum dolor sit amet? </span>
-                            <AiFillPlusCircle fill="#FF9A1E" class="faq-plus-icon"/>
+                            <AiFillPlusCircle fill="#FF9A1E" className="faq-plus-icon"/>
                             </summary>
                         <p>Answer</p>
                     </details>
@@ -23,24 +23,7 @@ function Faq() {
                     <details>
                         <summary>
                             <span>Lorem ipsum dolor sit amet? </span>
-                            <AiFillPlusCircle fill="#FF9A1E" class="faq-plus-icon"/>
-                            </summary>
-                        <p>Answer</p>
-                    </details>
-
-
-                    <details>
-                        <summary>
-                            <span>Lorem ipsum dolor sit amet? </span>
-                            <AiFillPlusCircle fill="#FF9A1E" class="faq-plus-icon"/>
-                            </summary>
-                        <p>Answer</p>
-                    </details>
-
-                    <details>
-                        <summary>
-                            <span>Lorem ipsum dolor sit amet? </span>
-                            <AiFillPlusCircle fill="#FF9A1E" class="faq-plus-icon"/>
+                            <AiFillPlusCircle fill="#FF9A1E" className="faq-plus-icon"/>
                             </summary>
                         <p>Answer</p>
                     </details>
@@ -49,7 +32,24 @@ function Faq() {
                     <details>
                         <summary>
                             <span>Lorem ipsum dolor sit amet? </span>
-                            <AiFillPlusCircle fill="#FF9A1E" class="faq-plus-icon"/>
+                            <AiFillPlusCircle fill="#FF9A1E" className="faq-plus-icon"/>
+                            </summary>
+                        <p>Answer</p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <span>Lorem ipsum dolor sit amet? </span>
+                            <AiFillPlusCircle fill="#FF9A1E" className="faq-plus-icon"/>
+                            </summary>
+                        <p>Answer</p>
+                    </details>
+
+
+                    <details>
+                        <summary>
+                            <span>Lorem ipsum dolor sit amet? </span>
+                            <AiFillPlusCircle fill="#FF9A1E" className="faq-plus-icon"/>
                             </summary>
                         <p>Answer</p>
                     </details>
