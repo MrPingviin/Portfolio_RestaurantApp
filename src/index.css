@@ -21,18 +21,22 @@
   transition: filter, translate, 0.15s;
 }
 
-html, body {
+html,
+body {
   font-family: Nunito-Regular;
   overflow-x: hidden;
 }
-html ::-webkit-scrollbar, body ::-webkit-scrollbar {
+html ::-webkit-scrollbar,
+body ::-webkit-scrollbar {
   background-color: #FEB45A;
 }
-html ::-webkit-scrollbar-thumb, body ::-webkit-scrollbar-thumb {
+html ::-webkit-scrollbar-thumb,
+body ::-webkit-scrollbar-thumb {
   background-color: #FF9A1E;
 }
 
-a:hover, button:hover {
+a:hover,
+button:hover {
   cursor: pointer;
   filter: brightness(85%);
 }
@@ -43,12 +47,16 @@ button {
   z-index: 998;
 }
 
+.mobile {
+  display: none;
+}
+
 .page {
   min-height: 90vh;
   min-width: 100vw;
   max-height: auto;
   margin-bottom: 2rem;
-  padding-top: 1rem;
+  padding-top: 5rem;
 }
 
 @font-face {
@@ -78,4 +86,145 @@ button {
 @font-face {
   font-family: Nunito-ExtraBold;
   src: url("./assets/fonts/Nunito-ExtraBold.ttf");
+}
+@media screen and (max-width: 1500px) {
+  html,
+body {
+    font-size: 18px;
+  }
+  .mobile {
+    display: inline;
+  }
+  #nav-options ul {
+    display: none;
+  }
+  #nav-signup {
+    display: none;
+  }
+  #mobile-menu {
+    display: flex;
+    font-size: 3rem;
+  }
+  #welcomePage-content {
+    gap: 2rem;
+  }
+  #welcomePage-content #welcomePage-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+  #welcomePage-content #welcomePage-middle #welcomePage-image .welcomePage-side-icon-steak {
+    display: none;
+  }
+  #welcomePage-content #welcomePage-middle #welcomePage-image .welcomePage-side-icon-hamburger {
+    display: none;
+  }
+  #welcomePage-content #welcomePage-middle #welcomePage-image img {
+    max-width: 7.5rem;
+  }
+  #welcomePage-content #welcomePage-middle #welcomePage-image img:nth-child(1) {
+    max-width: 20rem;
+  }
+  #welcomePage-content .welcomePage-side-icon-hotdog {
+    bottom: 13rem;
+    left: 0rem;
+    max-width: 7.5rem;
+    display: none;
+  }
+  #welcomePage-content .welcomePage-bottom-card {
+    text-align: center;
+  }
+  /* #welcomePage-bottom {
+
+      justify-content: center;
+
+
+      #welcomePage-bottom-content {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+      }
+  } */
+  #bestSellers-content-menu-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-card {
+    width: 50vw;
+    font-size: 2rem;
+  }
+  .menu-card button {
+    font-size: 1.75rem;
+  }
+  #menu-content #menu-categories {
+    font-size: 1.75rem;
+  }
+  #menu-content #tomato {
+    top: 0vh;
+  }
+  #booking-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #booking-content #booking-header img {
+    max-width: 7rem;
+    bottom: 0vh;
+    top: 0vh;
+    left: -45vw;
+    right: 0vw;
+  }
+  #booking-content #booking-description {
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+  }
+  #our-Services-Cardholder {
+    display: flex;
+    flex-direction: column;
+  }
+  #our-Services-Cardholder .our-Services-Card {
+    min-height: 30vh;
+    max-width: 60vw;
+  }
+  #our-Services-Appholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  #our-Services-Appholder #our-Services-Appholder-Description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #our-Services-Appholder #our-Services-Appholder-Description #our-Services-Bigtitle {
+    text-align: center;
+  }
+  #testimonials-reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  #testimonials-reviews-container #testimonials-reviews-content #testimonials-reviews-content {
+    gap: 2rem;
+  }
+  #testimonials-reviews-container #testimonials-reviews-content .testimonials-review-card {
+    min-width: 60vw;
+    min-height: 20vh;
+  }
+  #testimonials-reviews-container #testimonials-reviews-content .testimonials-review-card .testimonials-review-card-description .testimonials-review-card-description-main p {
+    max-width: 45vw;
+    font-size: 1.15rem;
+  }
+  #newsletter-content-title {
+    text-align: center;
+  }
+  #faq-content-titles h2 {
+    text-align: center;
+  }
 }/*# sourceMappingURL=index.css.map */

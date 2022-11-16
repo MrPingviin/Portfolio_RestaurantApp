@@ -19,7 +19,6 @@ function BestSellers() {
     fetch("http://localhost:3000/api/best-sellers")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.length);
 
         const dataContainer = [];
 
@@ -51,7 +50,6 @@ function BestSellers() {
             </div>
           );
           dataContainer.push(card);
-          console.log(dataContainer);
           let target = document.querySelector(
             "#bestSellers-content-menu-content"
           );

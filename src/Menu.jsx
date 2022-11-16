@@ -16,7 +16,6 @@ function Menu() {
     fetch(`http://localhost:3000/api/${category}`)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.length);
 
         const dataContainer = [];
 
@@ -46,7 +45,6 @@ function Menu() {
             </div>
           );
           dataContainer.push(card);
-          console.log(dataContainer);
           let target = document.querySelector("#menu-dishes");
           let root = createRoot(target);
           root.render(dataContainer);

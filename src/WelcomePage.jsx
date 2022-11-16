@@ -1,5 +1,5 @@
 import './WelcomePage.css'
-import { AiFillClockCircle } from 'react-icons/ai';
+import { AiFillClockCircle, AiOutlineMenu } from 'react-icons/ai';
 import { ImLocation } from 'react-icons/im'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 
@@ -28,6 +28,10 @@ function WelcomePage() {
                 <a href="#testimonials">Reviews</a>
                 <a href="#faq">Faq</a>
               </ul>
+              
+              <div id="mobile-menu" class="mobile">
+                <AiOutlineMenu/>
+              </div>
             </div>
 
             <div id="nav-signup">

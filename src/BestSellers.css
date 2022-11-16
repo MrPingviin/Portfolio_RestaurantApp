@@ -43,7 +43,7 @@
 
 .menu-card img {
   max-width: 12.5rem;
-  max-height: auto;
+  max-height: 12.5rem;
   aspect-ratio: auto;
 }
 
@@ -59,16 +59,19 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  gap: 0.5rem;
 }
 .menu-card-upper-row span {
   display: flex;
   justify-content: center;
   width: 100%;
+  text-align: center;
 }
 
 .menu-card-bottom-row {
   display: flex;
   flex-direction: column;
+  width: 75%;
 }
 
 .menu-card-bottom-row-upper {
@@ -156,7 +159,7 @@
 #bestSellers-content-menu-content {
   display: flex;
   justify-content: center;
-  grid-gap: 1rem;
+  gap: 1rem;
   width: 100%;
   flex-wrap: wrap;
 }/*# sourceMappingURL=BestSellers.css.map */
