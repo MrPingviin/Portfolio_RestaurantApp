@@ -157,6 +157,15 @@ button {
         display: none;
     }
 
+    #welcomePage-bottom {
+        width: 100%;
+        justify-content: center;
+
+        #welcomePage-bottom-content {
+            width: 90%;
+        }
+    }
+
     .welcomePage-bottom-card {
         text-align: center;
     }
@@ -286,4 +295,121 @@ button {
     }
 }
 
+}
+
+@media screen and (max-width: 500px) { 
+
+html, body {
+    font-size: 14px;
+}
+
+.page {
+    padding-top: 7.5rem;
+}
+
+#welcomePage-message-title {
+    font-size: 1.5rem;
+}
+
+    #welcomePage-bottom {
+
+    justify-content: center;
+    }
+
+    #welcomePage-bottom-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .welcomePage-bottom-card {
+            min-height: 15vh;
+        }
+    }
+
+#welcomePage-message-button {
+    flex-direction: column;
+
+    button {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+   
+}
+#bestSellers-content {
+    text-align: center;
+}
+
+#bestSellers-content-titles img {
+    display: none;
+}
+#tomato {
+    display: none;
+}
+
+.menu-card {
+    width: 100%;
+    min-height: 40vh;
+}
+
+#menu-titles {
+    text-align: center;
+}
+
+#menu-content {
+    width: 100%;
+}
+
+#menu-content #menu-categories {
+    font-size: 1.15rem;
+    width: 100%;
+}
+
+#our-Services-Titles {
+    text-align: center;
+    font-size: 1.85rem;
+    p {
+        font-size: 1.3rem;
+    }
+}
+
+#our-Services-Appholder-MobileApps {
+    display: flex;
+    flex-direction: column;
+}
+
+#testimonials-titles {
+    text-align: center;
+}
+#testimonials-reviews-container #testimonials-reviews-content .testimonials-review-card {
+    min-width: 60vw;
+    min-height: 25vh;
+}
+
+#newsletter-content-subscribe {
+    width: 90vw;
+}
+
+#faq-content-main {
+    font-size: 1.3rem;
+
+    details {
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+#footer-content {
+    text-align: center;
+}
+
+.footer-item h2 {
+    font-size: 1.25rem;
+}
+
+#footer-main {
+    display: flex;
+    flex-direction: column;
+    
+}
 }
