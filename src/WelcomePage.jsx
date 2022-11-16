@@ -5,11 +5,31 @@ import {
   AiFillCloseCircle,
 } from "react-icons/ai";
 import { ImLocation } from "react-icons/im";
-import { BsFillTelephoneFill } from "react-icons/bs";
+import { BsFillTelephoneFill, BsFillArrowUpCircleFill } from "react-icons/bs";
 import { useEffect, useState } from "react";
 
 function WelcomePage() {
   const [isMenuOpen, setMenu] = useState(false);
+
+  const [yOffset, setYOffset] = useState(window.pageYOffset);
+
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
+
+  function handleScroll() {
+    const currentYOffset = window.pageYOffset;
+    const visible = yOffset > currentYOffset;
+    const navbar = document.querySelector("nav");
+
+    setYOffset(currentYOffset);
+
+
+    if (visible == true ? navbar.style.transform = "translateY(-10vh)" : navbar.style.transform = "translateY(0vh)" );
+  }
+
 
   useEffect(() => {
     const target = document.querySelector("#mobile-menu-container");
@@ -22,6 +42,9 @@ function WelcomePage() {
 
   return (
     <div id="welcomePage" className="page">
+      <div id="to-top-button">
+      <BsFillArrowUpCircleFill fill="#FF9A1E" onClick={() => window.location.href = "#"}/>
+      </div>
       <nav>
         <div id="navbar">
           <div id="nav-content">

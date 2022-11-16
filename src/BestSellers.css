@@ -98,6 +98,47 @@
   font-size: 1.35rem;
 }
 
+.menu-card-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 85%;
+  gap: 0.5rem;
+}
+.menu-card-buttons .menu-details-button {
+  border-radius: 5rem;
+  background-color: #FF9A1E;
+  color: #2D2D2D;
+  font-size: 2.25rem;
+  padding: 0.5rem;
+}
+.menu-card-buttons .menu-details-button:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+
+.menu-inspect-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 998;
+}
+.menu-inspect-container .menu-inspect-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90%;
+  width: 90%;
+  padding: 2.5%;
+  background-color: red;
+}
+
 #bestSellers {
   display: flex;
   position: relative;

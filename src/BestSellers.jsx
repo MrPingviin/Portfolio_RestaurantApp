@@ -10,6 +10,7 @@ import {
   BsFillArrowLeftSquareFill,
   BsFillArrowRightSquareFill,
 } from "react-icons/bs";
+import {TbListDetails} from "react-icons/tb";
 import { useEffect, useState, createElement } from "react";
 import { createRoot } from "react-dom/client";
 import ReactDOM, { render } from "react-dom";
@@ -45,7 +46,11 @@ function BestSellers() {
                   </span>
                 </div>
               </div>
-              <button>Add To Cart</button>
+              <div className="menu-card-buttons">
+                <button>Add To Cart</button>
+                  <TbListDetails className="menu-details-button"/>
+              
+                </div>
               </div>
             </div>
           );

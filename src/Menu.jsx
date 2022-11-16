@@ -5,6 +5,7 @@ import {
   AiOutlineStar,
   AiFillStar,
 } from "react-icons/ai";
+import {TbListDetails} from "react-icons/tb";
 import { useEffect, useState, createElement } from "react";
 import { createRoot } from "react-dom/client";
 import ReactDOM, { render } from "react-dom";
@@ -42,7 +43,7 @@ function Menu() {
                 </div>
                 <div className="menu-card-buttons">
                 <button>Add To Cart</button>
-                <button>Inspect</button>
+                  <TbListDetails className="menu-details-button"/>
                 </div>
               </div>
             </div>
@@ -90,6 +91,68 @@ function Menu() {
 
   return (
     <div id="menu" className="page">
+
+      <div className="menu-inspect-container hidden">
+        <div className="menu-inspect-content">
+          
+          <div className="menu-inspect-image-section">
+            <span>nagykep</span>
+            <div className="menu-inspect-image-mini-images">
+              <span>kicsikep</span>
+              <span>kicsikep</span>
+              <span>kicsikep</span>
+            </div>
+          </div>
+
+          <div className="menu-inspect-description-section">
+            <div className="menu-inspect-description-title-section">
+              <h1>Title</h1>
+              <div className="menu-inspect-description-ratings">
+                <span>csillag</span>
+                <span>212 reviews</span>
+              </div>
+            </div>
+
+            <div className="menu-inspect-description-price-section">
+              <span>Discount Price</span>
+              <span>Old Price</span>
+              <span>Save $2.00</span>
+            </div>
+
+            <div className="menu-inspect-description-main-section">
+
+              <h2>Description</h2>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem nisi modi eos, corrupti officia illo corporis esse ipsa eum?
+              </p>
+
+              <h2>Size</h2>
+
+              <div className="menu-inspect-description-main-sizes">
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+              </div>
+
+              <h2>Quantity</h2>
+
+              <div className="menu-inspect-description-main-quantity-section">
+                <span>-</span>
+                <span>2</span>
+                <span>+</span>
+              </div>
+
+              <button>
+                Add To Cart
+              </button>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <div id="menu-content">
         <img
           src="/img/tomato.webp"

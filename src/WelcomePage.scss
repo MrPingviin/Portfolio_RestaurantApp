@@ -10,6 +10,23 @@ nav {
     border-bottom: 0.25rem solid $Orange;
 }
 
+#to-top-button {
+    display: flex;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    font-size: 4rem;
+    z-index: 999;
+    opacity: 0.55;
+
+    &:hover {
+        cursor: pointer;
+        filter: brightness(90%);
+        opacity: 1;
+    }
+    
+}
+
 #navbar {
     display: flex;
     justify-content: center;
@@ -65,6 +82,10 @@ nav {
     color: $White;
     border-radius: 1.25rem;
     font-size: 0.75em;
+}
+
+#welcomePage {
+    position: relative;
 }
 
 #welcomePage-content {
@@ -180,7 +201,7 @@ z-index: -1;
 .welcomePage-side-icon-hamburger {
     @include welcomePage-side-icon();
     right: 17.5vh;
-    bottom: 25vh;
+    bottom: 27.5vh;
     transform: rotateZ(30deg);
 }
 
