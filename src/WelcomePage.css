@@ -49,16 +49,11 @@ nav {
   gap: 3rem;
 }
 
-#nav-options ul a:first-child {
-  opacity: 0;
-  border-bottom: 0.35rem #F5F5F5 solid;
+#nav-options ul li a:hover {
+  cursor: pointer;
 }
 
-#nav-options ul a:first-child:hover {
-  cursor: auto;
-}
-
-#nav-options ul a:hover {
+#nav-options ul li a:hover {
   border-bottom: 0.35rem #FF9A1E solid;
 }
 

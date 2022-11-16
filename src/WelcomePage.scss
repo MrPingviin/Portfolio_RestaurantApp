@@ -49,17 +49,12 @@ nav {
 }
 
 
-#nav-options ul a:first-child {
-    opacity: 0;
-    border-bottom: 0.35rem $Background solid;
-}
-
-#nav-options ul a:first-child:hover {
-    cursor:auto;
+#nav-options ul li a:hover {
+    cursor: pointer;
 }
 
 // ! Sample
-#nav-options ul a:hover{
+#nav-options ul li a:hover{
     border-bottom: 0.35rem $Orange solid;
 }
 
