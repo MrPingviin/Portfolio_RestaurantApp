@@ -30,6 +30,12 @@ function WelcomePage() {
     if (visible == true ? navbar.style.transform = "translateY(-10vh)" : navbar.style.transform = "translateY(0vh)" );
   }
 
+  function closeMenu() {
+    const target = document.querySelector("#mobile-menu-container");
+    target.style.display = "none";
+    setMenu(false);
+  }
+
 
   useEffect(() => {
     const target = document.querySelector("#mobile-menu-container");
@@ -65,34 +71,34 @@ function WelcomePage() {
                 <h1>Menu</h1>
                 <ul>
                   <li>
-                    <a href="#">Home</a>
+                    <a href="#" onClick={closeMenu}>Home</a>
                   </li>
                   <hr />
                   <li>
-                    <a href="#best-Sellers">Best sellers</a>
+                    <a href="#best-Sellers" onClick={closeMenu}>Best sellers</a>
                   </li>
                   <hr />
                   <li>
-                    <a href="#menu">Menu</a>
+                    <a href="#menu" onClick={closeMenu}>Menu</a>
                   </li>
                   <hr />
                   <li>
-                    <a href="#booking">Book Table</a>
+                    <a href="#booking" onClick={closeMenu}>Book Table</a>
                   </li>
                   <hr />
                   <li>
-                    <a href="#our-Services">About</a>
+                    <a href="#our-Services" onClick={closeMenu}>About</a>
                   </li>
                   <hr />
                   <li>
-                    <a href="#testimonials">Reviews</a>
+                    <a href="#testimonials" onClick={closeMenu}>Reviews</a>
                   </li>
                   <hr />
                   <li>
-                    <a href="#faq">Faq</a>
+                    <a href="#faq" onClick={closeMenu}>Faq</a>
                   </li>
                   <li>
-                    <button>Sign Up</button>
+                    <button onClick={closeMenu}>Sign Up</button>
                   </li>
                 </ul>
               </div>

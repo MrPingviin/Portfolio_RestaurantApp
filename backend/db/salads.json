@@ -1,6 +1,6 @@
 [
     {
-        "img": "/img/dishes/salads/dish-salad.webp",
+        "img": "http://localhost:5173/img/dishes/salads/dish-salad.webp",
         "alt": "A plate of green salad.",
         "name": "Greek Salad",
         "price": 12.00,
@@ -10,7 +10,7 @@
     },
 
     {
-        "img": "/img/dishes/salads/dish-salad-2.webp",
+        "img": "http://localhost:5173/img/dishes/salads/dish-salad-2.webp",
         "alt": "A plate of green salad.",
         "name": "Olive Salad",
         "price": 15.50,
@@ -20,7 +20,7 @@
     },
 
     {
-        "img": "/img/dishes/salads/dish-salad-3.webp",
+        "img": "http://localhost:5173/img/dishes/salads/dish-salad-3.webp",
         "alt": "A plate of green salad.",
         "name": "Ceasar Salad",
         "price": 9.40,
@@ -30,7 +30,7 @@
     },
 
     {
-        "img": "/img/dishes/salads/dish-salad-4.webp",
+        "img": "http://localhost:5173/img/dishes/salads/dish-salad-4.webp",
         "alt": "A plate of green salad.",
         "name": "Mixed Salad",
         "price": 9.99,

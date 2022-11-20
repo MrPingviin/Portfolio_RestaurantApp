@@ -9,6 +9,21 @@ import {TbListDetails} from "react-icons/tb";
 import { useEffect, useState, createElement } from "react";
 import { createRoot } from "react-dom/client";
 import ReactDOM, { render } from "react-dom";
+/* 
+function inspectMenuOpener() {
+const to_top_button = document.querySelector("#to-top-button");
+const inspect_menu = document.querySelector(".menu-inspect-description-main-section");
+const [isInspectOpen, setInspectOpen] = useState(false);
+
+setInspectOpen(true)
+
+console.log("teszt");
+
+
+
+}  */
+
+
 
 function Menu() {
   const [category, setCategory] = useState("burgers");
@@ -27,7 +42,7 @@ function Menu() {
               <div className="menu-card-main">
                 <div className="menu-card-upper-row">
                   <span>{data[i].name}</span>
-                 <AiOutlineHeart /> 
+                 <AiOutlineHeart />
                 </div>
                 <div className="menu-card-bottom-row">
                   <div className="menu-card-bottom-row-upper">
@@ -55,6 +70,9 @@ function Menu() {
         }
       });
   });
+
+
+
 
   function setSelected(event) {
     const target = document.querySelector("#menu-categories-content");
@@ -92,9 +110,9 @@ function Menu() {
   return (
     <div id="menu" className="page">
 
-      <div className="menu-inspect-container hidden">
+      <div className="menu-inspect-container">
         <div className="menu-inspect-content">
-          
+
           <div className="menu-inspect-image-section">
             <span>nagykep</span>
             <div className="menu-inspect-image-mini-images">
@@ -108,8 +126,8 @@ function Menu() {
             <div className="menu-inspect-description-title-section">
               <h1>Title</h1>
               <div className="menu-inspect-description-ratings">
-                <span>csillag</span>
-                <span>212 reviews</span>
+                <span className="menu-inspect-description-rating">csillag</span>
+                <span className="menu-inspect-description-review-count">212 reviews</span>
               </div>
             </div>
 
@@ -130,17 +148,21 @@ function Menu() {
               <h2>Size</h2>
 
               <div className="menu-inspect-description-main-sizes">
-                <span>S</span>
-                <span>M</span>
-                <span>L</span>
+
+                      <button>S</button>
+                      <button>M</button>
+                      <button>L</button>
+
               </div>
 
               <h2>Quantity</h2>
 
               <div className="menu-inspect-description-main-quantity-section">
-                <span>-</span>
-                <span>2</span>
-                <span>+</span>
+                  <div className="menu-inspect-description-main-quantity-setquantity">
+                      <button>-</button>
+                      <button>2</button>
+                      <button>+</button>
+                  </div>
               </div>
 
               <button>

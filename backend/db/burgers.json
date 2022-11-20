@@ -1,6 +1,6 @@
 [
     {
-        "img": "/img/dishes/burgers/dish-burger.webp",
+        "img": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
         "alt": "A hamburger.",
         "name": "Smokey Burger",
         "price": 12.00,
@@ -9,7 +9,7 @@
         "type": "Burger"
     },
     {
-        "img": "/img/dishes/burgers/dish-burger.webp",
+        "img": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
         "alt": "A hamburger.",
         "name": "Doe Burger",
         "price": 9.99,
@@ -18,7 +18,7 @@
         "type": "Burger"
     },
     {
-        "img": "/img/dishes/burgers/dish-burger.webp",
+        "img": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
         "alt": "A hamburger.",
         "name": "Ultra Burger",
         "price": 15.99,
@@ -28,7 +28,7 @@
     },
 
     {
-        "img": "/img/dishes/burgers/dish-burger.webp",
+        "img": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
         "alt": "A hamburger.",
         "name": "Killer Burger",
         "price": 29.99,
@@ -38,7 +38,7 @@
     },
 
     {
-        "img": "/img/dishes/burgers/dish-burger.webp",
+        "img": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
         "alt": "A hamburger.",
         "name": "John Burger",
         "price": 8.99,

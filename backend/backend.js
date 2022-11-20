@@ -16,6 +16,21 @@ app.get('/', (req, res) => {
 
 })
 
+app.get('/api', (req, res) => {
+    const dataContainer = [];
+    fs.readdir(`${__dirname + '/db/'}`, (err, files) => {
+        files.forEach(file => {
+            const newName = file.slice(0, file.length - 5);
+            
+            if(newName != "bestsellers") {
+                dataContainer.push(newName);
+            }
+        })
+
+    res.send(dataContainer);
+    })
+})
+
 app.get('/api/best-sellers', (req, res) => {
     res.sendFile(`${__dirname + '/db/bestsellers.json'}`);
 })

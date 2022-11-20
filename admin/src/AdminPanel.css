@@ -1,0 +1,238 @@
+.highlighted {
+  color: #FF9A1E;
+}
+
+.editInput {
+  min-width: 10%;
+  max-width: 100%;
+  padding: 0.5rem;
+}
+
+#admin-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+#admin-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+  background-color: #EAEAEA;
+  padding: 2rem 0rem 0rem 0rem;
+  gap: 2rem;
+}
+
+#admin-sidebar-main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 10%;
+  font-family: Nunito-ExtraBold;
+}
+#admin-sidebar-main-title h2 {
+  font-size: 1.15rem;
+}
+
+#admin-sidebar-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  font-family: Nunito-Bold;
+  font-size: 1.5rem;
+}
+#admin-sidebar-options li a:hover {
+  border-bottom: 0.35rem #FF9A1E solid;
+}
+
+#admin-sidebar-main {
+  height: 90%;
+}
+
+#admin-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  background-color: #F5F5F5;
+  height: 100%;
+}
+
+#admin-main-navbar {
+  display: flex;
+  background-color: #EAEAEA;
+  width: 100%;
+  height: 7.5%;
+  border-left: 0.15rem solid rgba(40, 40, 40, 0.1);
+}
+
+#admin-main-navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  height: 100%;
+  width: 100%;
+}
+
+#admin-main-navbar-content-search-section {
+  display: flex;
+  padding: 0rem 0rem 0rem 1rem;
+  align-items: center;
+}
+
+#admin-main-navbar-searchbar {
+  width: 60%;
+  font-size: 2rem;
+  border: none;
+  background-color: #EAEAEA;
+  height: 100%;
+  padding: 0rem 0rem 0rem 2rem;
+}
+#admin-main-navbar-searchbar:focus {
+  outline: none;
+}
+
+#admin-main-navbar-content-user {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-right: 5rem;
+}
+
+#admin-main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 92.5%;
+  width: 95%;
+  background-color: #F5F5F5;
+}
+
+#admin-main-content-optionsbar {
+  display: flex;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  background-color: #F5F5F5;
+}
+
+#admin-main-content-optionsbar-content {
+  display: flex;
+  background-color: #F5F5F5;
+  height: 50%;
+  gap: 1rem;
+}
+#admin-main-content-optionsbar-content button {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #FEB45A;
+  font-family: Nunito-Medium;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 1.1rem;
+}
+#admin-main-content-optionsbar-content button:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+
+#admin-main-content-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+#admin-main-content-main-navbar {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  font-size: 1.1rem;
+  font-family: Nunito-Bold;
+  gap: 2rem;
+  border-bottom: 0.15rem solid rgba(40, 40, 40, 0.1);
+  background-color: #FFFFFF;
+}
+
+.admin-main-content-main-navbar-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.admin-main-content-main-navbar-option button {
+  padding: 0.5rem;
+  background-color: #FEB45A;
+  border-radius: 0.5rem;
+}
+
+#admin-main-content-main-food-list-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+#admin-main-content-main-food-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+#admin-main-content-main-food-list li {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.25rem;
+  font-family: Nunito-Bold;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  border-bottom: 0.15rem solid rgba(40, 40, 40, 0.05);
+}
+#admin-main-content-main-food-list li .clickable:hover {
+  cursor: pointer;
+  border-bottom: 0.35rem #FF9A1E solid;
+}
+#admin-main-content-main-food-list li img {
+  max-width: 5rem;
+}
+
+#admin-main-content-main-navbar-category-selector {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  background-color: #F5F5F5;
+  max-width: 10vw;
+  height: 15vh;
+  overflow-y: scroll;
+  gap: 0.5rem;
+  top: 4rem;
+  z-index: 10;
+  bottom: 0;
+  left: 2.5rem;
+  right: 0;
+  border: 0.15rem solid rgba(40, 40, 40, 0.05);
+}
+#admin-main-content-main-navbar-category-selector li {
+  border-bottom: 0.35rem #F5F5F5 solid;
+}
+#admin-main-content-main-navbar-category-selector li:hover {
+  border-bottom: 0.35rem #FF9A1E solid;
+}/*# sourceMappingURL=AdminPanel.css.map */
