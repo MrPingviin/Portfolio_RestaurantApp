@@ -7,6 +7,7 @@ import {
 import { ImLocation } from "react-icons/im";
 import { BsFillTelephoneFill, BsFillArrowUpCircleFill } from "react-icons/bs";
 import { useEffect, useState } from "react";
+import { WindowSharp } from "@mui/icons-material";
 
 function WelcomePage() {
   const [isMenuOpen, setMenu] = useState(false);
@@ -55,11 +56,9 @@ function WelcomePage() {
         <div id="navbar">
           <div id="nav-content">
             <div id="nav-logo">
-              <a href="#">
-                <span>
+                <span onClick={() => window.location.href = "#"}>
                   Food <span className="highlighted">Factory</span>
                 </span>
-              </a>
             </div>
 
             <div id="mobile-menu-container" className="mobile">
@@ -71,34 +70,34 @@ function WelcomePage() {
                 <h1>Menu</h1>
                 <ul>
                   <li>
-                    <a href="#" onClick={closeMenu}>Home</a>
+                    <span onClick={() => (closeMenu) (window.location.href = "#")}>Home</span>
                   </li>
                   <hr />
                   <li>
-                    <a href="#best-Sellers" onClick={closeMenu}>Best sellers</a>
+                  <span onClick={() => (closeMenu) (window.location.href = "#best-Sellers")}>Bestsellers</span>
                   </li>
                   <hr />
                   <li>
-                    <a href="#menu" onClick={closeMenu}>Menu</a>
+                  <span onClick={() => (closeMenu) (window.location.href = "#menu")}>Menu</span>
                   </li>
                   <hr />
                   <li>
-                    <a href="#booking" onClick={closeMenu}>Book Table</a>
+                  <span onClick={() => (closeMenu) (window.location.href = "#booking")}>Booking</span>
                   </li>
                   <hr />
                   <li>
-                    <a href="#our-Services" onClick={closeMenu}>About</a>
+                  <span onClick={() => (closeMenu) (window.location.href = "#our-Services")}>About</span>
                   </li>
                   <hr />
                   <li>
-                    <a href="#testimonials" onClick={closeMenu}>Reviews</a>
+                  <span onClick={() => (closeMenu) (window.location.href = "#testimonials")}>Reviews</span>
                   </li>
                   <hr />
                   <li>
-                    <a href="#faq" onClick={closeMenu}>Faq</a>
+                  <span onClick={() => (closeMenu) (window.location.href = "#faq")}>FAQ</span>
                   </li>
                   <li>
-                    <button onClick={closeMenu}>Sign Up</button>
+                    <button onClick={() => (closeMenu) (alert("WIP"))}>Sign Up</button>
                   </li>
                 </ul>
               </div>
@@ -107,34 +106,32 @@ function WelcomePage() {
             <div id="nav-optionSection">
               <div id="nav-options">
                 <ul>
-                  <a href="#" className="hidden">
-                    DEBUG
-                  </a>
+                <span className="hidden">DEBUG</span>
                   <li>
-                    <a href="#">Home</a>
+                  <span onClick={() => (window.location.href = "#")}>Home</span>
                   </li>
                   <li>
-                    <a href="#best-Sellers">Best sellers</a>
+                  <span onClick={() => (window.location.href = "#best-Sellers")}>Bestsellers</span>
                   </li>
 
                   <li>
-                    <a href="#menu">Menu</a>
+                  <span onClick={() => (window.location.href = "#menu")}>Menu</span>
                   </li>
 
                   <li>
-                    <a href="#booking">Book Table</a>
+                  <span onClick={() => (window.location.href = "#booking")}>Booking</span>
                   </li>
 
                   <li>
-                    <a href="#our-Services">About</a>
+                  <span onClick={() => (window.location.href = "#our-Services")}>About</span>
                   </li>
 
                   <li>
-                    <a href="#testimonials">Reviews</a>
+                  <span onClick={() => (window.location.href = "#testimonials")}>Reviews</span>
                   </li>
 
                   <li>
-                    <a href="#faq">Faq</a>
+                  <span onClick={() => (window.location.href = "#faq")}>FAQ</span>
                   </li>
                 </ul>
 
@@ -144,7 +141,7 @@ function WelcomePage() {
               </div>
 
               <div id="nav-signup">
-                <button>Sign Up</button>
+                <button onClick={() => alert("WIP!")}>Sign Up</button>
               </div>
             </div>
           </div>
@@ -170,8 +167,8 @@ function WelcomePage() {
               </p>
             </div>
             <div id="welcomePage-message-button">
-              <button>Order Now</button>
-              <button>Get the Food</button>
+              <button onClick={() => window.location.href = "#menu"}>Order Now</button>
+              <button onClick={() => window.location.href = "#menu"}>Get the Food</button>
             </div>
           </div>
           <div id="welcomePage-image">

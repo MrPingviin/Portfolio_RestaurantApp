@@ -51,6 +51,10 @@ nav {
   font-family: Nunito-ExtraBold;
   font-size: 2.25rem;
 }
+#nav-logo span:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
 
 #nav-optionSection {
   display: flex;
@@ -64,11 +68,11 @@ nav {
   gap: 3rem;
 }
 
-#nav-options ul li a:hover {
+#nav-options ul li span:hover {
   cursor: pointer;
 }
 
-#nav-options ul li a:hover {
+#nav-options ul li span:hover {
   border-bottom: 0.35rem #FF9A1E solid;
 }
 

@@ -86,10 +86,11 @@
     display: flex;
     padding: 0rem 0rem 0rem 1rem;
     align-items: center;
+    width: 50%;
 }
 
 #admin-main-navbar-searchbar {
-    width: 60%;
+    width: 100%;
     font-size: 2rem;
     border: none;
     background-color: $Gray;
@@ -248,4 +249,9 @@
         border-bottom: 0.35rem $Orange solid;
     }
     
+}
+
+.editInput {
+    border-radius: 0.5rem;
+    border: 0.1rem solid $Black;
 }

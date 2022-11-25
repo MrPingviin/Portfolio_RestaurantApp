@@ -13,7 +13,7 @@ function Newsletter() {
 
                 <div id="newsletter-content-subscribe">
                 <input type="email" name="subscribe" id="subscribe_input" placeholder="Your Email Address" />
-                <button type="submit" name="subscribe" id="subscribe_button">Subscribe</button>
+                <button type="submit" name="subscribe" id="subscribe_button" onClick={() => (alert("WIP!"))}>Subscribe</button>
                 </div>
             </div>
         </div>

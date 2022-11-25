@@ -51,6 +51,11 @@ nav {
 #nav-logo {
     font-family: Nunito-ExtraBold;
     font-size: 2.25rem;
+
+    & span:hover {
+        cursor: pointer;
+        filter: brightness(90%);
+    }
 }
 
 #nav-optionSection {
@@ -66,12 +71,12 @@ nav {
 }
 
 
-#nav-options ul li a:hover {
+#nav-options ul li span:hover {
     cursor: pointer;
 }
 
 // ! Sample
-#nav-options ul li a:hover{
+#nav-options ul li span:hover{
     border-bottom: 0.35rem $Orange solid;
 }
 

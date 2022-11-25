@@ -49,6 +49,10 @@
   font-family: Nunito-Medium;
   font-size: 1.25rem;
 }
+.footer-item ul li:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}
 
 #footer-bottom {
   display: flex;
@@ -60,6 +64,10 @@
   color: #FEB45A;
   font-family: Nunito-ExtraBold;
 }
-#footer-bottom a {
+#footer-bottom span span {
   color: #FFFFFF;
+}
+#footer-bottom span span:hover {
+  cursor: pointer;
+  filter: brightness(80%);
 }/*# sourceMappingURL=Footer.css.map */

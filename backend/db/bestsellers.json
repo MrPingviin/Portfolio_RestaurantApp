@@ -1,20 +1,36 @@
 [
     {
-        "img": "/img/dishes/salads/dish-salad.webp",
-        "alt": "A plate of green salad.",
-        "name": "Greek Salad",
+        "img_large": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
+        "alt_large": "A hamburger.",
+        "img_small_first": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
+        "alt_small_first": "#",
+        "img_small_second": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
+        "alt_small_second": "#",
+        "img_small_third": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
+        "alt_small_third": "#",
+        "name": "Smokey Burger",
+        "description": "This is a test description which is subject to change later.",
         "price": 12.00,
         "reviews": 69,
+        "rating": 5,
         "sold": 0,
-        "type": "Salad"
+        "type": "Burger"
     },
 
     {
-        "img": "/img/dishes/salads/dish-salad-2.webp",
-        "alt": "A plate of green salad.",
+        "img_large": "/img/dishes/salads/dish-salad-2.webp",
+        "alt_large": "A plate of green salad.",
+        "img_small_first": "/img/dishes/salads/dish-salad-2.webp",
+        "alt_small_first": "#",
+        "img_small_second": "/img/dishes/salads/dish-salad-2.webp",
+        "alt_small_second": "#",
+        "img_small_third": "/img/dishes/salads/dish-salad-2.webp",
+        "alt_small_third": "#",
         "name": "Olive Salad",
+        "description": "This is a test description which is subject to change later.",
         "price": 15.50,
         "reviews": 123,
+        "rating": 5,
         "sold": 0,
         "type": "Salad"
     },

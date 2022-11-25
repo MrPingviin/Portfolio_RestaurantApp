@@ -16,7 +16,7 @@
         "price": 15.50,
         "reviews": 123,
         "sold": 0,
-        "type": "Salad"
+        "type": "Chicken"
     },
 
     {
@@ -26,7 +26,7 @@
         "price": 9.40,
         "reviews": 12,
         "sold": 0,
-        "type": "Salad"
+        "type": "Chicken"
     },
 
     {
@@ -36,6 +36,6 @@
         "price": 9.99,
         "reviews": 566,
         "sold": 0,
-        "type": "Salad"
+        "type": "Chicken"
     }
-]
+    ]

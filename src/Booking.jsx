@@ -17,7 +17,7 @@ function Booking() {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas in porro facilis omnis sint aliquam, fugit ea voluptate molestiae tenetur?</p>
                     </div>
                     <div id="booking-bottom">
-                        <button>Book Now</button>
+                        <button onClick={() => (alert("WIP!"))}>Book Now</button>
                     </div>
                 </div>
 

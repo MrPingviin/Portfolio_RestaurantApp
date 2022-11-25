@@ -16,28 +16,28 @@ function Footer() {
                     <div className="footer-item">
                     <h2>FOOD FACTORY</h2>
                     <ul>
-                        <a href="#menu"><li>Menu</li></a>
-                        <a href="#best-Sellers"><li>Best Sellers</li></a>
-                        <a href="#testimonials"><li>Reviews</li></a>
-                        <a href="#booking"><li>Booking</li></a>
+                       <li onClick={() => window.location.href = "#menu"}>Menu</li>
+                       <li onClick={() => window.location.href = "#best-Sellers"}>Bestsellers</li>
+                       <li onClick={() => window.location.href = "#testimonials"}>Reviews</li>
+                       <li onClick={() => window.location.href = "#booking"}>Booking</li>
                     </ul>
                     </div>
 
                     <div className="footer-item">
                     <h2>SUPPORT</h2>
                     <ul>
-                        <a href="#"><li>Get Help</li></a>
-                        <a href="#"><li>Contact Us</li></a>
-                        <a href="#"><li>Food feedback</li></a>
+                    <li onClick={() => window.location.href = "#"}>Get Help</li>
+                    <li onClick={() => window.location.href = "#"}>Contact Us</li>
+                    <li onClick={() => window.location.href = "#"}>Food Feedback</li>
                     </ul>
                     </div>
 
                     <div className="footer-item">
                     <h2>LEGAL</h2>
                     <ul>
-                        <a href="#"><li>Terms and Conditions</li></a>
-                        <a href="#"><li>Privacy Policy</li></a>
-                        <a href="#"><li>Disclaimer</li></a>
+                    <li onClick={() => window.location.href = "#"}>Terms and Conditions</li>
+                    <li onClick={() => window.location.href = "#"}>Privacy Policy</li>
+                    <li onClick={() => window.location.href = "#"}>Disclaimer</li>
                        
                     </ul>
                     </div>
@@ -47,7 +47,7 @@ function Footer() {
                 </div>
 
                 <div id="footer-bottom">
-                <span>Food Factory @ 2022 - Made with <BsFillHeartFill fill="red"/> by <a href="https://www.linkedin.com/in/szabo-richard/" target='_blank'>Richard Szabo</a> .</span>
+                <span>Food Factory @ 2022 - Made with <BsFillHeartFill fill="red"/> by <span onClick={() => window.location.href = "https://www.linkedin.com/in/szabo-richard"}>Richard Szabo</span> .</span>
                 </div>
             </div>
 

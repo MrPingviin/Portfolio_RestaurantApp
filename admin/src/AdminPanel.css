@@ -86,10 +86,11 @@
   display: flex;
   padding: 0rem 0rem 0rem 1rem;
   align-items: center;
+  width: 50%;
 }
 
 #admin-main-navbar-searchbar {
-  width: 60%;
+  width: 100%;
   font-size: 2rem;
   border: none;
   background-color: #EAEAEA;
@@ -235,4 +236,9 @@
 }
 #admin-main-content-main-navbar-category-selector li:hover {
   border-bottom: 0.35rem #FF9A1E solid;
+}
+
+.editInput {
+  border-radius: 0.5rem;
+  border: 0.1rem solid #2D2D2D;
 }/*# sourceMappingURL=AdminPanel.css.map */

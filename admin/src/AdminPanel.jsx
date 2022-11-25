@@ -5,7 +5,7 @@ import { ImAddressBook } from "react-icons/im";
 import { IoMdNotifications } from "react-icons/io";
 import { AiFillPlusCircle } from "react-icons/ai";
 import { createRoot } from "react-dom/client";
-import { useEffect, useState } from "react";
+import { createElement, useEffect, useState } from "react";
 
 function AdminPanel() {
   const [currentCategory, setCurrentCategory] = useState("Burgers");
@@ -104,12 +104,88 @@ function AdminPanel() {
         type="text"
         className="editInput"
         placeholder={event.target.textContent}
+        onClick={editInputListenerSetter}
       ></input>
     );
+
     const root = createRoot(event.target.parentElement);
     root.render(editInput);
-    event.target.remove();
   }
+
+  const editInputListenerSetter = (event) => {
+    const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+    for (let num of numbers) {
+      if (event.target.placeholder.includes(num)) {
+        event.target.addEventListener("keydown", tempSaveEditedItemNumber);
+      } else {
+        event.target.addEventListener("keydown", tempSaveEditedItemString);
+      }
+    }
+  };
+
+  const tempSaveEditedItemNumber = (event) => {
+    switch (event.key) {
+      case "0":
+        break;
+      case "1":
+        break;
+      case "2":
+        break;
+      case "3":
+        break;
+      case "4":
+        break;
+      case "5":
+        break;
+      case "6":
+        break;
+      case "7":
+        break;
+      case "8":
+        break;
+      case "9":
+        break;
+      case ".":
+        break;
+      default:
+        setTimeout(() => {
+          event.target.value = event.target.value.slice(
+            0,
+            event.target.value.length - 1
+          );
+        }, 1);
+    }
+  };
+
+  const tempSaveEditedItemString = (event) => {
+    if (event.key === "Enter") {
+      if (event.target.value != 0) {
+        const newValue = event.target.value;
+
+        const newSpan = (
+          <span className="clickable" onClick={editItem}>
+            {newValue}
+          </span>
+        );
+
+        const root = createRoot(event.target.parentElement);
+        root.render(newSpan);
+      } else {
+        alert("A megadott értéknek legalább egy karakternek kell lennie!")
+      }
+    } 
+
+    if (event.key === "Escape") {
+      const oldSpan = (
+        <span className="clickable" onClick={editItem}>
+          {event.target.placeholder}
+        </span>
+      );
+      const root = createRoot(event.target.parentElement);
+      root.render(oldSpan);
+    }
+  };
 
   return (
     <div id="admin-panel" className="page">
