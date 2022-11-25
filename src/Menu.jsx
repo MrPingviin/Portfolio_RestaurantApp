@@ -185,9 +185,7 @@ function Menu() {
               </div>
               <div className="menu-card-buttons">
                 <button>Add To Cart</button>
-                <TbListDetails
-                  className="menu-details-button"
-                />
+               
               </div>
             </div>
           </div>

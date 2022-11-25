@@ -10,6 +10,29 @@ import { createElement, useEffect, useState } from "react";
 function AdminPanel() {
   const [currentCategory, setCurrentCategory] = useState("Burgers");
 
+  const enableSaveButton = () => {
+    const target = document.querySelector("#savebutton-container");
+    const saveButton = (
+      <div
+        className="admin-main-content-main-navbar-option"
+        onClick={() => alert("WIP!")}
+      >
+        <button id="admin-main-savechanges-button">Save Changes</button>
+      </div>
+    );
+
+    const root = createRoot(target);
+    root.render(saveButton);
+  };
+
+
+  const disableSaveButton = () => {
+    const target = document.querySelector("#admin-main-savechanges-button");
+
+    target.style.display = "none";
+  }
+
+
   /*   useEffect(() => {
     setCurrentCategory("Chickens")
    }, []) */
@@ -32,6 +55,18 @@ function AdminPanel() {
 
   const fillCategoriesSelector = (event) => {
     const filteredCategories = [];
+
+    const closeButton = (
+      <li
+        onClick={(event) =>
+          (event.target.parentElement.parentElement.style.display = "none")
+        }
+      >
+        {" "}
+        <span>Close Menu</span>{" "}
+      </li>
+    );
+    filteredCategories.push(closeButton);
 
     for (let i = 0; i < menuCategories.length; i++) {
       if (menuCategories[i] != event.target.textContent) {
@@ -59,6 +94,7 @@ function AdminPanel() {
     categoryButton.textContent = event.target.textContent;
     setCurrentCategory(event.target.textContent);
     event.target.parentNode.style.display = "none";
+    disableSaveButton() 
   };
 
   function getMenuItems() {
@@ -69,7 +105,7 @@ function AdminPanel() {
         for (let i = 0; i < data.length; i++) {
           const listItem = (
             <li>
-              <img src={data[i].img} alt={data[i].alt} />
+              <img src={data[i].img_large} alt={data[i].alt_large} />
               <div>
                 <span onClick={editItem} className="clickable">
                   {data[i].name}
@@ -171,10 +207,13 @@ function AdminPanel() {
 
         const root = createRoot(event.target.parentElement);
         root.render(newSpan);
+
+        enableSaveButton()
+
       } else {
-        alert("A megadott értéknek legalább egy karakternek kell lennie!")
+        alert("The input needs to be at least one character long.");
       }
-    } 
+    }
 
     if (event.key === "Escape") {
       const oldSpan = (
@@ -270,6 +309,8 @@ function AdminPanel() {
                 <span>Filter:</span>
                 <button>None</button>
               </div>
+
+              <div id="savebutton-container"></div>
             </div>
 
             <div id="admin-main-content-main-food-list-section">

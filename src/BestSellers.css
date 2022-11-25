@@ -99,6 +99,7 @@
   border-radius: 3rem;
   background-color: #FF9A1E;
   font-size: 1.35rem;
+  font-family: Nunito-Bold;
 }
 
 .menu-card-buttons {
@@ -250,7 +251,7 @@
   display: flex;
 }
 .menu-inspect-container .menu-inspect-content .menu-inspect-description-section .menu-inspect-description-main-section .menu-inspect-description-main-quantity-section .menu-inspect-description-main-quantity-setquantity {
-  background-color: red;
+  background-color: #FEB45A;
   display: flex;
   gap: 1rem;
   border-radius: 5rem;
@@ -274,6 +275,50 @@
   cursor: auto;
 }
 
+@media screen and (max-width: 1500px) {
+  .menu-inspect-container .menu-inspect-content {
+    height: 97.5vh;
+    width: 97.5vw;
+    gap: 1.5rem;
+  }
+  .menu-inspect-container .menu-inspect-content .menu-inspect-close-icon {
+    right: 2.5vh;
+    top: 1.5vh;
+  }
+  .menu-inspect-container .menu-inspect-content .menu-inspect-image-section {
+    height: 50%;
+    width: 100%;
+  }
+  .menu-inspect-container .menu-inspect-content .menu-inspect-description-section {
+    width: 90%;
+  }
+  .menu-inspect-container .menu-inspect-content .menu-inspect-description-section .menu-inspect-description-main-section button {
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menu-inspect-container .menu-inspect-content {
+    height: 97.5vh;
+    width: 97.5vw;
+    gap: 1.5rem;
+  }
+  .menu-inspect-container .menu-inspect-content .menu-inspect-close-icon {
+    right: 0.5vh;
+    top: 0.5vh;
+  }
+  .menu-inspect-container .menu-inspect-content .menu-inspect-image-section {
+    height: 50%;
+    width: 100%;
+  }
+  .menu-inspect-container .menu-inspect-content .menu-inspect-description-section {
+    width: 90%;
+  }
+  .menu-inspect-container .menu-inspect-content .menu-inspect-description-section .menu-inspect-description-main-section button {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+}
 #bestSellers {
   display: flex;
   position: relative;

@@ -164,13 +164,15 @@
     display: flex;
     position: relative;
     align-items: center;
-    height: 10%;
+    
+    height: 15%;
     width: 100%;
     font-size: 1.10rem;
     font-family: Nunito-Bold;
     gap: 2rem;
     border-bottom: 0.15rem solid rgba(40, 40, 40, 0.1);
     background-color: $White;
+
 }
 
 .admin-main-content-main-navbar-option {
@@ -231,7 +233,7 @@
     position: absolute;
     background-color: $Background;
     max-width: 10vw;
-    height: 15vh;
+    height: 20vh;
     overflow-y: scroll;
     gap: 0.5rem;
     top: 4rem;
@@ -241,11 +243,27 @@
     right: 0;
     border: 0.15rem solid rgba(40, 40, 40, 0.05);
 
+    & li:first-child {
+        margin-top: 0.5rem;
+
+        &:hover {
+            cursor: pointer;
+            filter: brightness(80%);
+        }
+        
+        & span {
+            padding: 0.5rem;
+            background-color: $Orange;
+            border-radius: 0.3rem;
+        }
+    }
+
     & li {
         border-bottom: 0.35rem $Background solid;
     }
 
     & li:hover {
+        cursor: pointer;
         border-bottom: 0.35rem $Orange solid;
     }
     
@@ -254,4 +272,47 @@
 .editInput {
     border-radius: 0.5rem;
     border: 0.1rem solid $Black;
+}
+
+#admin-main-savechanges-button {
+    display: flex;
+    padding: 1rem;
+    font-family: Nunito-ExtraBold;
+    font-size: 1rem;
+    background-color: $LightOrange;
+    animation: glowing 1.5s linear infinite;
+
+    &:hover {
+        animation: none;
+    }
+    
+}
+
+@keyframes glowing {
+
+    0% {
+        box-shadow: none;
+        transform: rotateZ(0deg);
+    }
+
+    25% {
+        box-shadow: 0px 0px 5rem $Orange;
+        transform: rotateZ(2.5deg);
+    }
+
+    50% {
+        box-shadow: 0px 0px 5rem $Orange;
+        transform: rotateZ(0deg);
+    }
+
+    75% {
+        box-shadow: 0px 0px 5rem $Orange;
+        transform: rotateZ(-2.5deg);
+    }
+
+    100% {
+        box-shadow: none;
+        transform: rotateZ(0deg);
+    }
+    
 }

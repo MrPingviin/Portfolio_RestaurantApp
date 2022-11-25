@@ -1,20 +1,26 @@
 [
     {
-        "img": "http://localhost:5173/img/drinks/cold-drinks/drink-coke.webp",
-        "alt": "A can of coke.",
+        "img_large": "http://localhost:5173/img/drinks/cold-drinks/drink-coke.webp",
+        "alt_large":  "A can of coke.",
         "name": "Coca Cola (330ml)",
+        "description": "This is a test description which is subject to change later.",
         "price": 3.99,
-        "reviews": 25,
+        "reviews": 13,
+        "rating": 5,
         "sold": 0,
         "type": "ColdDrink"
     },
     {
-        "img": "http://localhost:5173/img/drinks/cold-drinks/drink-dietcoke.webp",
-        "alt": "A can of diet coke.",
+        "img_large": "http://localhost:5173/img/drinks/cold-drinks/drink-dietcoke.webp",
+        "alt_large":  "A can of diet coke.",
         "name": "Diet Cola (330ml)",
+        "description": "This is a test description which is subject to change later.",
         "price": 4.99,
-        "reviews": 43,
+        "reviews": 13,
+        "rating": 5,
         "sold": 0,
         "type": "ColdDrink"
     }
+
+  
 ]

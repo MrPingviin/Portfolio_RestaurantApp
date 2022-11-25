@@ -1,26 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import WelcomePage from "./WelcomePage";
-import BestSellers from "./BestSellers";
-import Menu from "./Menu";
-import Booking from "./Booking";
-import OurServices from "./OurServices";
-import Testimonials from "./Testimonials";
-import Newsletter from "./Newsletter";
-import Faq from "./Faq";
-import Footer from "./Footer";
+import AdminPage from "./admin/AdminPage";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import FrontPage from "./FrontPage";
 import "./index.css";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <FrontPage />,
+  },
+
+  {
+    path: "/AdminPage",
+    element: <AdminPage />,
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <div>
-    <WelcomePage />
-    <BestSellers />
-    <Menu />
-    <Booking />
-    <OurServices />
-    <Testimonials />
-    <Newsletter />
-    <Faq />
-    <Footer />
+    <RouterProvider router={router} />
   </div>
 );

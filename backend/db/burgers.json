@@ -50,7 +50,6 @@
         "sold": 0,
         "type": "Burger"
     },
-
     {
         "img_large": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
         "alt_large": "A hamburger.",
@@ -68,25 +67,21 @@
         "sold": 0,
         "type": "Burger"
     },
-
     {
-        
-            "img_large": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
-            "alt_large": "A hamburger.",
-            "img_small_first": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
-            "alt_small_first": "#",
-            "img_small_second": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
-            "alt_small_second": "#",
-            "img_small_third": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
-            "alt_small_third": "#",
-            "name": "John Burger",
-            "description": "This is a test description which is subject to change later.",
-            "price": 8.99,
-            "reviews": 69,
-            "rating": 5,
-            "sold": 0,
-            "type": "Burger"
-        
+        "img_large": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
+        "alt_large": "A hamburger.",
+        "img_small_first": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
+        "alt_small_first": "#",
+        "img_small_second": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
+        "alt_small_second": "#",
+        "img_small_third": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
+        "alt_small_third": "#",
+        "name": "John Burger",
+        "description": "This is a test description which is subject to change later.",
+        "price": 8.99,
+        "reviews": 69,
+        "rating": 5,
+        "sold": 0,
+        "type": "Burger"
     }
-
 ]

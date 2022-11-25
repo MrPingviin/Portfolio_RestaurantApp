@@ -1,58 +1,70 @@
 [
     {
-        "img_large": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
-        "alt_large": "A hamburger.",
-        "img_small_first": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
+        "img_large": "http://localhost:5173/img/dishes/chickens/dish-chicken-3.webp",
+        "alt_large": "A chicken dish.",
+        "img_small_first": "http://localhost:5173/img/dishes/chickens/dish-chicken-3.webp",
         "alt_small_first": "#",
-        "img_small_second": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
+        "img_small_second": "http://localhost:5173/img/dishes/chickens/dish-chicken-3.webp",
         "alt_small_second": "#",
-        "img_small_third": "http://localhost:5173/img/dishes/burgers/dish-burger.webp",
+        "img_small_third": "http://localhost:5173/img/dishes/chickens/dish-chicken-3.webp",
         "alt_small_third": "#",
-        "name": "Smokey Burger",
+        "name": "Chicken with broccoli salad and soy sauce",
         "description": "This is a test description which is subject to change later.",
-        "price": 12.00,
+        "price": 15.99,
         "reviews": 69,
         "rating": 5,
         "sold": 0,
-        "type": "Burger"
+        "type": "Chicken"
     },
-
     {
-        "img_large": "/img/dishes/salads/dish-salad-2.webp",
-        "alt_large": "A plate of green salad.",
-        "img_small_first": "/img/dishes/salads/dish-salad-2.webp",
+        "img_large": "http://localhost:5173/img/dishes/chickens/dish-chicken.webp",
+        "alt_large": "A chicken dish.",
+        "img_small_first": "http://localhost:5173/img/dishes/chickens/dish-chicken.webp",
         "alt_small_first": "#",
-        "img_small_second": "/img/dishes/salads/dish-salad-2.webp",
+        "img_small_second": "http://localhost:5173/img/dishes/chickens/dish-chicken.webp",
         "alt_small_second": "#",
-        "img_small_third": "/img/dishes/salads/dish-salad-2.webp",
+        "img_small_third": "http://localhost:5173/img/dishes/chickens/dish-chicken.webp",
         "alt_small_third": "#",
-        "name": "Olive Salad",
+        "name": "BBQ chicken with grilled vegetables",
         "description": "This is a test description which is subject to change later.",
-        "price": 15.50,
-        "reviews": 123,
+        "price": 12.00,
+        "reviews": 13,
         "rating": 5,
         "sold": 0,
-        "type": "Salad"
+        "type": "Chicken"
     },
-
     {
-        "img": "/img/dishes/salads/dish-salad-3.webp",
-        "alt": "A plate of green salad.",
-        "name": "Ceasar Salad",
-        "price": 9.40,
-        "reviews": 12,
+        "img_large": "http://localhost:5173/img/dishes/chickens/dish-chicken-4.webp",
+        "alt_large": "A chicken dish.",
+        "img_small_first": "http://localhost:5173/img/dishes/chickens/dish-chicken-4.webp",
+        "alt_small_first": "#",
+        "img_small_second": "http://localhost:5173/img/dishes/chickens/dish-chicken-4.webp",
+        "alt_small_second": "#",
+        "img_small_third": "http://localhost:5173/img/dishes/chickens/dish-chicken-4.webp",
+        "alt_small_third": "#",
+        "name": "Chicken salad with olive",
+        "description": "This is a test description which is subject to change later.",
+        "price": 29.99,
+        "reviews": 69,
+        "rating": 5,
         "sold": 0,
-        "type": "Salad"
+        "type": "Chicken"
     },
-
     {
-        "img": "/img/dishes/salads/dish-salad-4.webp",
-        "alt": "A plate of green salad.",
-        "name": "Mixed Salad",
-        "price": 9.99,
-        "reviews": 566,
+        "img_large":"http://localhost:5173/img/dishes/chickens/dish-chicken-2.webp",
+        "alt_large": "A chicken dish.",
+        "img_small_first": "http://localhost:5173/img/dishes/chickens/dish-chicken-2.webp",
+        "alt_small_first": "#",
+        "img_small_second": "http://localhost:5173/img/dishes/chickens/dish-chicken-2.webp",
+        "alt_small_second": "#",
+        "img_small_third": "http://localhost:5173/img/dishes/chickens/dish-chicken-2.webp",
+        "alt_small_third": "#",
+        "name": "Roasted chicken with beans and rice",
+        "description": "This is a test description which is subject to change later.",
+        "price": 15.00,
+        "reviews": 69,
+        "rating": 5,
         "sold": 0,
-        "type": "Salad"
+        "type": "Chicken"
     }
-    
 ]

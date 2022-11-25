@@ -1,10 +1,12 @@
 [
     {
-        "img": "http://localhost:5173/img/drinks/teas/tea-black.webp",
-        "alt": "A cup of black tea.",
-        "name": "Black tea",
-        "price": 2.99,
-        "reviews": 79,
+        "img_large": "http://localhost:5173/img/drinks/teas/tea-black.webp",
+        "alt_large": "A cup of black tea.",
+        "name": "Black Tea",
+        "description": "This is a test description which is subject to change later.",
+        "price": 12.00,
+        "reviews": 13,
+        "rating": 5,
         "sold": 0,
         "type": "Tea"
     }
