@@ -1,26 +1,36 @@
 [
     {
-        "img_large": "http://localhost:5173/img/drinks/cold-drinks/drink-coke.webp",
-        "alt_large":  "A can of coke.",
-        "name": "Coca Cola (330ml)",
+        "img_large": "http://localhost:5173/img/drinks/colddrinks/drink-colddrink.webp",
+        "alt_large": "A chicken dish.",
+        "img_small_first": "http://localhost:5173/img/drinks/colddrinks/drink-colddrink.webp",
+        "alt_small_first": "#",
+        "img_small_second": "http://localhost:5173/img/drinks/colddrinks/drink-colddrink.webp",
+        "alt_small_second": "#",
+        "img_small_third": "http://localhost:5173/img/drinks/colddrinks/drink-colddrink.webp",
+        "alt_small_third": "#",
+        "name": "Coca - Cola (330ml)",
         "description": "This is a test description which is subject to change later.",
-        "price": 3.99,
-        "reviews": 13,
-        "rating": 5,
-        "sold": 0,
-        "type": "ColdDrink"
+        "price": "3.99",
+        "reviews": "84",
+        "rating": "5",
+        "sold": "0",
+        "type": "Colddrink"
     },
     {
-        "img_large": "http://localhost:5173/img/drinks/cold-drinks/drink-dietcoke.webp",
-        "alt_large":  "A can of diet coke.",
+        "img_large": "http://localhost:5173/img/drinks/colddrinks/drink-dietcoke.webp",
+        "alt_large": "A chicken dish.",
+        "img_small_first": "http://localhost:5173/img/drinks/colddrinks/drink-colddrink.webp",
+        "alt_small_first": "#",
+        "img_small_second": "http://localhost:5173/img/drinks/colddrinks/drink-colddrink.webp",
+        "alt_small_second": "#",
+        "img_small_third": "http://localhost:5173/img/drinks/colddrinks/drink-colddrink.webp",
+        "alt_small_third": "#",
         "name": "Diet Cola (330ml)",
         "description": "This is a test description which is subject to change later.",
-        "price": 4.99,
-        "reviews": 13,
-        "rating": 5,
-        "sold": 0,
-        "type": "ColdDrink"
+        "price": "4.99",
+        "reviews": "47",
+        "rating": "5",
+        "sold": "0",
+        "type": "Colddrink"
     }
-
-  
 ]

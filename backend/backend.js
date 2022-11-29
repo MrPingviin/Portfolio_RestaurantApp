@@ -4,6 +4,7 @@ const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
 const url = require('url');
+const { Api } = require('@mui/icons-material');
 const port = 3000;
 
 app.use(cors());
@@ -21,39 +22,75 @@ app.get('/api', (req, res) => {
     fs.readdir(`${__dirname + '/db/'}`, (err, files) => {
         files.forEach(file => {
             const newName = file.slice(0, file.length - 5);
-            
-            if(newName != "bestsellers") {
+
+            if (newName != "Bestsellers") {
                 dataContainer.push(newName);
             }
         })
 
-    res.send(dataContainer);
+        res.send(dataContainer);
     })
 })
 
-app.get('/api/best-sellers', (req, res) => {
-    res.sendFile(`${__dirname + '/db/bestsellers.json'}`);
+app.get('/api/Bestsellers', (req, res) => {
+    res.sendFile(`${__dirname + '/db/Bestsellers.json'}`);
 })
 
-app.get('/api/burgers', (req, res) => {
-    res.sendFile(`${__dirname + '/db/burgers.json'}`);
+app.get('/api/Burgers', (req, res) => {
+    res.sendFile(`${__dirname + '/db/Burgers.json'}`);
 })
 
-app.get('/api/salads', (req, res) => {
-    res.sendFile(`${__dirname + '/db/salads.json'}`);
+app.get('/api/Salads', (req, res) => {
+    res.sendFile(`${__dirname + '/db/Salads.json'}`);
 })
 
-app.get('/api/chickens', (req, res) => {
-    res.sendFile(`${__dirname + '/db/chickens.json'}`);
+app.get('/api/Chickens', (req, res) => {
+    res.sendFile(`${__dirname + '/db/Chickens.json'}`);
 })
 
-app.get('/api/coldDrinks', (req, res) => {
-    res.sendFile(`${__dirname + '/db/colddrinks.json'}`);
+app.get('/api/Colddrinks', (req, res) => {
+    res.sendFile(`${__dirname + '/db/Colddrinks.json'}`);
 })
 
-app.get('/api/teas', (req, res) => {
-    res.sendFile(`${__dirname + '/db/teas.json'}`);
+app.get('/api/Teas', (req, res) => {
+    res.sendFile(`${__dirname + '/db/Teas.json'}`);
 })
+
+app.post('/api/upload/Burgers', (req, res) => {
+
+    const convertedData = JSON.stringify(req.body);
+
+    fs.writeFileSync(`${path.resolve(__dirname + '/db/Burgers.json')}`, convertedData);
+})
+
+app.post('/api/upload/Chickens', (req, res) => {
+
+    const convertedData = JSON.stringify(req.body);
+
+    fs.writeFileSync(`${path.resolve(__dirname + '/db/Chickens.json')}`, convertedData);
+})
+
+app.post('/api/upload/Colddrinks', (req, res) => {
+
+    const convertedData = JSON.stringify(req.body);
+
+    fs.writeFileSync(`${path.resolve(__dirname + '/db/Colddrinks.json')}`, convertedData);
+})
+
+app.post('/api/upload/Salads', (req, res) => {
+
+    const convertedData = JSON.stringify(req.body);
+
+    fs.writeFileSync(`${path.resolve(__dirname + '/db/Salads.json')}`, convertedData);
+})
+
+app.post('/api/upload/Teas', (req, res) => {
+
+    const convertedData = JSON.stringify(req.body);
+
+    fs.writeFileSync(`${path.resolve(__dirname + '/db/Teas.json')}`, convertedData);
+})
+
 
 app.listen(port, (req, res) => {
     console.log(`Server started on port ${port}!`);

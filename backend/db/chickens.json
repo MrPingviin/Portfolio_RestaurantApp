@@ -10,7 +10,7 @@
         "alt_small_third": "#",
         "name": "BBQ chicken with grilled vegetables",
         "description": "This is a test description which is subject to change later.",
-        "price": 12.00,
+        "price": 12.99,
         "reviews": 13,
         "rating": 5,
         "sold": 0,
@@ -27,8 +27,8 @@
         "alt_small_third": "#",
         "name": "Roasted chicken with beans and rice",
         "description": "This is a test description which is subject to change later.",
-        "price": 15.00,
-        "reviews": 69,
+        "price": 15.99,
+        "reviews": 45,
         "rating": 5,
         "sold": 0,
         "type": "Chicken"
@@ -45,7 +45,7 @@
         "name": "Chicken with broccoli salad and soy sauce",
         "description": "This is a test description which is subject to change later.",
         "price": 15.99,
-        "reviews": 69,
+        "reviews": 37,
         "rating": 5,
         "sold": 0,
         "type": "Chicken"
@@ -62,7 +62,7 @@
         "name": "Chicken salad with olive",
         "description": "This is a test description which is subject to change later.",
         "price": 29.99,
-        "reviews": 69,
+        "reviews": 41,
         "rating": 5,
         "sold": 0,
         "type": "Chicken"

@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import AdminPage from "./admin/AdminPage";
 import {
+  createHashRouter,
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";

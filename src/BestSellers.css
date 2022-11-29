@@ -141,8 +141,8 @@
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  height: 90%;
-  width: 90%;
+  height: 95%;
+  width: 95%;
   padding: 2.5%;
   background-color: rgba(245, 245, 245, 0.98);
   border: 0.5rem solid #FF9A1E;
@@ -166,11 +166,16 @@
   justify-content: space-between;
   width: 45%;
   height: 90%;
+  gap: 1rem;
 }
 .menu-inspect-container .menu-inspect-content .menu-inspect-image-section .menu-inspect-image-large-image {
   display: flex;
   justify-content: center;
-  max-height: 60%;
+  max-height: 90%;
+  width: 100%;
+}
+.menu-inspect-container .menu-inspect-content .menu-inspect-image-section .menu-inspect-image-large-image img {
+  max-width: 60%;
 }
 .menu-inspect-container .menu-inspect-content .menu-inspect-image-section .menu-inspect-image-mini-images {
   display: grid;
@@ -180,7 +185,7 @@
   align-content: center;
 }
 .menu-inspect-container .menu-inspect-content .menu-inspect-image-section .menu-inspect-image-mini-images img {
-  max-width: 75%;
+  max-width: 80%;
 }
 .menu-inspect-container .menu-inspect-content .menu-inspect-description-section {
   display: flex;
@@ -191,6 +196,7 @@
 }
 .menu-inspect-container .menu-inspect-content .menu-inspect-description-section h1 {
   font-family: Nunito-ExtraBold;
+  max-width: 85%;
 }
 .menu-inspect-container .menu-inspect-content .menu-inspect-description-section .menu-inspect-description-ratings {
   display: flex;
@@ -279,7 +285,7 @@
   .menu-inspect-container .menu-inspect-content {
     height: 97.5vh;
     width: 97.5vw;
-    gap: 1.5rem;
+    gap: 10rem;
   }
   .menu-inspect-container .menu-inspect-content .menu-inspect-close-icon {
     right: 2.5vh;
@@ -301,7 +307,7 @@
   .menu-inspect-container .menu-inspect-content {
     height: 97.5vh;
     width: 97.5vw;
-    gap: 1.5rem;
+    gap: 2rem;
   }
   .menu-inspect-container .menu-inspect-content .menu-inspect-close-icon {
     right: 0.5vh;

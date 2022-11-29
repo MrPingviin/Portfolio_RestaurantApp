@@ -4,8 +4,8 @@
         "alt_large": "A cup of black tea.",
         "name": "Black Tea",
         "description": "This is a test description which is subject to change later.",
-        "price": 12.00,
-        "reviews": 13,
+        "price": 12.99,
+        "reviews": 75,
         "rating": 5,
         "sold": 0,
         "type": "Tea"

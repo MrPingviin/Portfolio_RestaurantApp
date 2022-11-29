@@ -20,7 +20,7 @@ import e from "cors";
 const dataContainer = [];
 const cardContainer = [];
 
-function BestSellers() {
+const BestSellers = () => {
   const [quantity, setQuantity] = useState(0);
 
   const minusQuantity = () => {
@@ -125,7 +125,7 @@ function BestSellers() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/best-sellers")
+    fetch("http://localhost:3000/api/Bestsellers")
       .then((response) => response.json())
       .then((data) => {
         dataContainer.push(data);
@@ -159,7 +159,7 @@ function BestSellers() {
                     </div>
                   </div>
                   <div className="menu-card-buttons">
-                    <button>Add To Cart</button>
+                    <button onClick={() => alert("WIP!")}>Add To Cart</button>
                     <TbListDetails className="menu-details-button" />
                   </div>
                 </div>
@@ -192,7 +192,7 @@ function BestSellers() {
                     </div>
                   </div>
                   <div className="menu-card-buttons">
-                    <button>Add To Cart</button>
+                    <button onClick={() => alert("WIP!")}>Add To Cart</button>
                     <TbListDetails
                       className="menu-details-button"
                       onClick={inspectRouter}
@@ -240,6 +240,6 @@ function BestSellers() {
       </div>
     </div>
   );
-}
+};
 
 export default BestSellers;

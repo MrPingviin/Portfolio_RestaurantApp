@@ -7,13 +7,11 @@ import {
 import { ImLocation } from "react-icons/im";
 import { BsFillTelephoneFill, BsFillArrowUpCircleFill } from "react-icons/bs";
 import { useEffect, useState } from "react";
-import { WindowSharp } from "@mui/icons-material";
 
 function WelcomePage() {
   const [isMenuOpen, setMenu] = useState(false);
 
   const [yOffset, setYOffset] = useState(window.pageYOffset);
-
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -27,8 +25,15 @@ function WelcomePage() {
 
     setYOffset(currentYOffset);
 
-
-    if (visible == true ? navbar.style.transform = "translateY(-10vh)" : navbar.style.transform = "translateY(0vh)" );
+    if (currentYOffset < 50) {
+      navbar.style.transform = "translateY(0vh)";
+    } else {
+      if (
+        visible == true
+          ? (navbar.style.transform = "translateY(-10vh)")
+          : (navbar.style.transform = "translateY(0vh)")
+      );
+    }
   }
 
   function closeMenu() {
@@ -36,7 +41,6 @@ function WelcomePage() {
     target.style.display = "none";
     setMenu(false);
   }
-
 
   useEffect(() => {
     const target = document.querySelector("#mobile-menu-container");
@@ -50,15 +54,18 @@ function WelcomePage() {
   return (
     <div id="welcomePage" className="page">
       <div id="to-top-button">
-      <BsFillArrowUpCircleFill fill="#FF9A1E" onClick={() => window.location.href = "#"}/>
+        <BsFillArrowUpCircleFill
+          fill="#FF9A1E"
+          onClick={() => (window.location.href = "#")}
+        />
       </div>
       <nav>
         <div id="navbar">
           <div id="nav-content">
             <div id="nav-logo">
-                <span onClick={() => window.location.href = "#"}>
-                  Food <span className="highlighted">Factory</span>
-                </span>
+              <span onClick={() => (window.location.href = "#")}>
+                Food <span className="highlighted">Factory</span>
+              </span>
             </div>
 
             <div id="mobile-menu-container" className="mobile">
@@ -70,34 +77,74 @@ function WelcomePage() {
                 <h1>Menu</h1>
                 <ul>
                   <li>
-                    <span onClick={() => (closeMenu) (window.location.href = "#")}>Home</span>
+                    <span
+                      onClick={() => closeMenu((window.location.href = "#"))}
+                    >
+                      Home
+                    </span>
                   </li>
                   <hr />
                   <li>
-                  <span onClick={() => (closeMenu) (window.location.href = "#best-Sellers")}>Bestsellers</span>
+                    <span
+                      onClick={() =>
+                        closeMenu((window.location.href = "#best-Sellers"))
+                      }
+                    >
+                      Bestsellers
+                    </span>
                   </li>
                   <hr />
                   <li>
-                  <span onClick={() => (closeMenu) (window.location.href = "#menu")}>Menu</span>
+                    <span
+                      onClick={() =>
+                        closeMenu((window.location.href = "#menu"))
+                      }
+                    >
+                      Menu
+                    </span>
                   </li>
                   <hr />
                   <li>
-                  <span onClick={() => (closeMenu) (window.location.href = "#booking")}>Booking</span>
+                    <span
+                      onClick={() =>
+                        closeMenu((window.location.href = "#booking"))
+                      }
+                    >
+                      Booking
+                    </span>
                   </li>
                   <hr />
                   <li>
-                  <span onClick={() => (closeMenu) (window.location.href = "#our-Services")}>About</span>
+                    <span
+                      onClick={() =>
+                        closeMenu((window.location.href = "#our-Services"))
+                      }
+                    >
+                      About
+                    </span>
                   </li>
                   <hr />
                   <li>
-                  <span onClick={() => (closeMenu) (window.location.href = "#testimonials")}>Reviews</span>
+                    <span
+                      onClick={() =>
+                        closeMenu((window.location.href = "#testimonials"))
+                      }
+                    >
+                      Reviews
+                    </span>
                   </li>
                   <hr />
                   <li>
-                  <span onClick={() => (closeMenu) (window.location.href = "#faq")}>FAQ</span>
+                    <span
+                      onClick={() => closeMenu((window.location.href = "#faq"))}
+                    >
+                      FAQ
+                    </span>
                   </li>
                   <li>
-                    <button onClick={() => (closeMenu) (alert("WIP"))}>Sign Up</button>
+                    <button onClick={() => closeMenu(alert("WIP"))}>
+                      Sign Up
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -106,32 +153,52 @@ function WelcomePage() {
             <div id="nav-optionSection">
               <div id="nav-options">
                 <ul>
-                <span className="hidden">DEBUG</span>
+                  <span className="hidden">DEBUG</span>
                   <li>
-                  <span onClick={() => (window.location.href = "#")}>Home</span>
+                    <span onClick={() => (window.location.href = "#")}>
+                      Home
+                    </span>
                   </li>
                   <li>
-                  <span onClick={() => (window.location.href = "#best-Sellers")}>Bestsellers</span>
-                  </li>
-
-                  <li>
-                  <span onClick={() => (window.location.href = "#menu")}>Menu</span>
-                  </li>
-
-                  <li>
-                  <span onClick={() => (window.location.href = "#booking")}>Booking</span>
+                    <span
+                      onClick={() => (window.location.href = "#best-Sellers")}
+                    >
+                      Bestsellers
+                    </span>
                   </li>
 
                   <li>
-                  <span onClick={() => (window.location.href = "#our-Services")}>About</span>
+                    <span onClick={() => (window.location.href = "#menu")}>
+                      Menu
+                    </span>
                   </li>
 
                   <li>
-                  <span onClick={() => (window.location.href = "#testimonials")}>Reviews</span>
+                    <span onClick={() => (window.location.href = "#booking")}>
+                      Booking
+                    </span>
                   </li>
 
                   <li>
-                  <span onClick={() => (window.location.href = "#faq")}>FAQ</span>
+                    <span
+                      onClick={() => (window.location.href = "#our-Services")}
+                    >
+                      About
+                    </span>
+                  </li>
+
+                  <li>
+                    <span
+                      onClick={() => (window.location.href = "#testimonials")}
+                    >
+                      Reviews
+                    </span>
+                  </li>
+
+                  <li>
+                    <span onClick={() => (window.location.href = "#faq")}>
+                      FAQ
+                    </span>
                   </li>
                 </ul>
 
@@ -167,8 +234,12 @@ function WelcomePage() {
               </p>
             </div>
             <div id="welcomePage-message-button">
-              <button onClick={() => window.location.href = "#menu"}>Order Now</button>
-              <button onClick={() => window.location.href = "#menu"}>Get the Food</button>
+              <button onClick={() => (window.location.href = "#menu")}>
+                Order Now
+              </button>
+              <button onClick={() => (window.location.href = "#menu")}>
+                Get the Food
+              </button>
             </div>
           </div>
           <div id="welcomePage-image">

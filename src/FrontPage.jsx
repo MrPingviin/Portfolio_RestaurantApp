@@ -10,8 +10,7 @@ import Newsletter from "./Newsletter";
 import Faq from "./Faq";
 import Footer from "./Footer";
 
-
-function Frontpage() {
+const Frontpage = () => {
   return (
     <div>
       <WelcomePage />
@@ -25,6 +24,6 @@ function Frontpage() {
       <Footer />
     </div>
   );
-}
+};
 
 export default Frontpage;

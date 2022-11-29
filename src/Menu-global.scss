@@ -141,8 +141,8 @@
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    height: 90%;
-    width: 90%;
+    height: 95%;
+    width: 95%;
     padding: 2.5%;
     background-color: rgba(245, 245, 245, 0.98);
     border: 0.5rem solid $Orange;
@@ -168,12 +168,18 @@
       justify-content: space-between;
       width: 45%;
       height: 90%;
+      gap: 1rem;
 
       .menu-inspect-image-large-image {
 
       display: flex;
       justify-content: center;
-      max-height: 60%;
+      max-height: 90%;
+      width: 100%;
+
+      & img {
+        max-width: 60%;
+      }
        
       }
       
@@ -187,7 +193,7 @@
 
 
         & img {
-          max-width: 75%;
+          max-width: 80%;
         }
 
        
@@ -203,6 +209,7 @@
 
       h1 {
         font-family: Nunito-ExtraBold;
+        max-width: 85%;
       }
 
       .menu-inspect-description-ratings {
@@ -321,7 +328,7 @@
     .menu-inspect-content { 
       height: 97.5vh;
       width: 97.5vw;
-      gap: 1.5rem;
+      gap: 10rem;
 
       .menu-inspect-close-icon {
         right: 2.5vh;
@@ -355,7 +362,7 @@
     .menu-inspect-content { 
       height: 97.5vh;
       width: 97.5vw;
-      gap: 1.5rem;
+      gap: 2rem;
 
       .menu-inspect-close-icon {
         right: 0.5vh;

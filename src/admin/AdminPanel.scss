@@ -46,7 +46,12 @@
     font-family: Nunito-Bold;
     font-size: 1.5rem;
 
-    & li a:hover {
+    & li {
+        border-bottom: 0.35rem $Gray solid;
+    }
+
+    & li:hover {
+        cursor: pointer;
         border-bottom: 0.35rem $Orange solid;
     }
 }
@@ -204,23 +209,62 @@
     height: 100%;
 
     & li {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        font-size: 1.25rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 3fr;
+        align-content: center;
         font-family: Nunito-Bold;
+        font-size: 1.25rem;
         padding: 1rem;
+        grid-gap: 1rem;
         background-color: $White;
         border-bottom: 0.15rem solid rgba(40, 40, 40, 0.05);
+
+        & span {
+            border-bottom: 0.35rem $White solid;
+        }
+
+        & img {
+            border-bottom: 0.35rem $White solid;
+        }
+       
 
         & .clickable:hover {
             cursor: pointer;
             border-bottom: 0.35rem $Orange solid;
         }
 
-        img {
-            max-width: 5rem;
+        & .uploadSection {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.25rem;
+            
+
+            button {
+                background-color: $Orange;
+                padding: 0.75rem 1rem;
+                border-radius: 0.5rem;
+                font-family: Nunito-Bold;
+            }
         }
+
+        & img {
+            max-width: 75%;
+        }
+
+        & div {
+            display: flex;
+            align-items: center;
+               
+        }
+
+        & span {
+            display: flex;
+
+            align-items: center;
+            gap: 1rem;
+        }
+        
     }
 }
 
@@ -272,6 +316,7 @@
 .editInput {
     border-radius: 0.5rem;
     border: 0.1rem solid $Black;
+    max-width: 80%;
 }
 
 #admin-main-savechanges-button {

@@ -16,10 +16,45 @@ import { ConstructionOutlined } from "@mui/icons-material";
 const dataContainer = [];
 
 function Menu() {
-  const [category, setCategory] = useState("Burgers");
+  const menuCategories = [];
+
+  // ! Fetch the menu categories from the /backend/db/ folder
+  useEffect(() => {
+    fetch("http://localhost:3000/api")
+      .then((response) => response.json())
+      .then((data) => {
+        menuCategories.push(data);
+        console.log("Categories => ", menuCategories);
+        setCategory(`${menuCategories[0][0]}`);
+        fillCategoryBar();
+      });
+  }, []);
+
+  // ! Fills the category selector bar
+  const fillCategoryBar = () => {
+    const categoryStorage = [];
+
+    for (let i = 0; i < menuCategories[0].length; i++) {
+      const listItem = (
+        <li
+          onClick={() => setCategory(menuCategories[0][i])(setSelected(event))}
+        >
+          {menuCategories[0][i]}
+        </li>
+      );
+      categoryStorage.push(listItem);
+    }
+    const target = document.querySelector("#menu-categories-content");
+    const root = createRoot(target);
+    root.render(categoryStorage);
+  };
+
+  const [category, setCategory] = useState("");
   const [quantity, setQuantity] = useState(0);
   const cardContainer = [];
 
+  // ? --------------------------------
+  // ! Order quantity setter logic on the buttons
   const minusQuantity = () => {
     if (quantity > 0) {
       setQuantity(quantity - 1);
@@ -31,11 +66,9 @@ function Menu() {
       setQuantity(quantity + 1);
     }
   };
+  // ? --------------------------------
 
-
-
-
-
+  // ! Hides the navbar, to-top button and makes the inspect menu visible also calls the load script.
   const inspectRouter = (event) => {
     const typeToFind =
       event.target.parentElement.parentElement.children[0].children[1]
@@ -47,15 +80,13 @@ function Menu() {
     const to_top_button = document.querySelector("#to-top-button");
     const navbar = document.querySelector("nav");
 
-  
-    
-
     loadSavedData(nameToFind);
     inspectMenu.style.display = "flex";
     to_top_button.style.display = "none";
     navbar.style.display = "none";
   };
 
+  // ! Loads the items's saved data from the local storage and gives it to the inspect menu
   const loadSavedData = (nameToFind) => {
     const menuItemName = document.querySelector("#menu-item-name");
     const menuItemPrice = document.querySelector("#menu-item-price");
@@ -118,6 +149,7 @@ function Menu() {
 
   // ** ------------------------------------------------------------------------------------------
 
+  // ! Fetch the items of the wanted category from the backend
   const fetchItemData = async (data) => {
     await fetch(`http://localhost:3000/api/${data}`)
       .then((response) => response.json())
@@ -126,6 +158,8 @@ function Menu() {
       });
   };
 
+  // ! At every category (state) changes checks if it's already downloaded or not.
+  // ! If not, it downloads and saves the data.
   useEffect(() => {
     const targetType = category.slice(0, category.length - 1);
 
@@ -152,11 +186,12 @@ function Menu() {
     }
   }, [category]);
 
+  // ! Renders the menu cards of the selected category.
   const renderMenu = (j) => {
     for (let i = 0; i < dataContainer[j].length; i++) {
       let card;
       if (
-        dataContainer[j][i].type == "ColdDrink" ||
+        dataContainer[j][i].type == "Colddrink" ||
         dataContainer[j][i].type == "Tea"
       ) {
         card = (
@@ -184,8 +219,7 @@ function Menu() {
                 </div>
               </div>
               <div className="menu-card-buttons">
-                <button>Add To Cart</button>
-               
+                <button onClick={() => alert("WIP!")}>Add To Cart</button>
               </div>
             </div>
           </div>
@@ -216,7 +250,7 @@ function Menu() {
                 </div>
               </div>
               <div className="menu-card-buttons">
-                <button>Add To Cart</button>
+                <button onClick={() => alert("WIP!")}>Add To Cart</button>
                 <TbListDetails
                   className="menu-details-button"
                   onClick={inspectRouter}
@@ -233,6 +267,7 @@ function Menu() {
     }
   };
 
+  // ! logic for the inspect menu closer icon
   const menuInspectCloser = () => {
     const inspectMenuElement = document.querySelector(
       ".menu-inspect-container"
@@ -245,38 +280,15 @@ function Menu() {
     setQuantity(0);
   };
 
-  function setSelected(event) {
+  // ! Sets the selected category's background color to orange on change in the menu's category bar.
+  const setSelected = (event) => {
+    console.log(event.target);
     const target = document.querySelector("#menu-categories-content");
     for (let i = 0; i < target.childElementCount; i++) {
       target.children[i].style.background = "none";
     }
     event.target.style.backgroundColor = "#FF9A1E";
-  }
-
-  function categorySwitch_Burger(event) {
-    setCategory("Burgers");
-    setSelected(event);
-  }
-
-  function categorySwitch_Chicken(event) {
-    setCategory("Chickens");
-    setSelected(event);
-  }
-
-  function categorySwitch_Salad(event) {
-    setCategory("Salads");
-    setSelected(event);
-  }
-
-  function categorySwitch_ColdDrink(event) {
-    setCategory("ColdDrinks");
-    setSelected(event);
-  }
-
-  function categorySwitch_Tea(event) {
-    setCategory("Teas");
-    setSelected(event);
-  }
+  };
 
   return (
     <div id="menu" className="page">
@@ -366,11 +378,7 @@ function Menu() {
 
         <div id="menu-categories">
           <ul id="menu-categories-content">
-            <li onClick={categorySwitch_Burger}>Burger</li>
-            <li onClick={categorySwitch_Chicken}>Chicken</li>
-            <li onClick={categorySwitch_Salad}>Salad</li>
-            <li onClick={categorySwitch_ColdDrink}>Cold-Drink</li>
-            <li onClick={categorySwitch_Tea}>Tea</li>
+            {/* <li onClick={categorySwitch_Tea}>Tea</li>  */}
           </ul>
         </div>
 
